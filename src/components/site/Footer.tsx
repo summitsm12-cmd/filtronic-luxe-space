@@ -11,7 +11,7 @@ export function Footer() {
             <img
               src={logo}
               alt="Filtronic Lifestyle Pvt Ltd"
-              className="h-20 md:h-24 w-auto object-contain"
+              className="w-[140px] md:w-[170px] h-auto object-contain"
             />
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
