@@ -107,7 +107,7 @@ function Services() {
         <div className="grid lg:grid-cols-12 gap-10 items-end">
           <div className="lg:col-span-8 reveal">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-6">What we do</p>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground">
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-brand-green">
               Our Interior <em className="italic text-brand-indigo">Services.</em>
             </h1>
           </div>
@@ -136,7 +136,7 @@ function Services() {
                 </div>
               </div>
               <div className="p-7 flex flex-col flex-1">
-                <h3 className="font-display text-xl text-foreground mb-3">{s.t}</h3>
+                <h3 className="font-display text-xl text-brand-green mb-3">{s.t}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed flex-1">{s.d}</p>
                 <Link
                   to="/contact"
@@ -162,7 +162,7 @@ function Services() {
         <div className="container-px mx-auto max-w-7xl">
           <div className="max-w-2xl mb-16">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">How we work</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl text-brand-green leading-tight">
               Four pillars behind <em className="italic text-brand-indigo">every project.</em>
             </h2>
           </div>
@@ -184,7 +184,7 @@ function Services() {
                   <div className="font-display text-brand-indigo text-sm mb-3">
                     {String(i + 1).padStart(2, "0")}
                   </div>
-                  <h3 className="font-display text-3xl md:text-4xl text-foreground mb-5">
+                  <h3 className="font-display text-3xl md:text-4xl text-brand-green mb-5">
                     {row.t}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">{row.d}</p>
@@ -200,7 +200,7 @@ function Services() {
         <div className="grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">FAQ</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl text-brand-green leading-tight">
               Questions, <em className="italic text-brand-indigo">answered.</em>
             </h2>
             <p className="text-muted-foreground leading-relaxed mt-6 max-w-md">

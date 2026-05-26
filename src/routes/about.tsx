@@ -107,7 +107,7 @@ function About() {
           <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-6 reveal">
             About the studio
           </p>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground max-w-4xl mx-auto reveal">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-brand-green max-w-4xl mx-auto reveal">
             Designing Spaces That <em className="italic text-brand-indigo">Inspire Living.</em>
           </h1>
           <p className="mt-8 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -125,7 +125,7 @@ function About() {
           </div>
           <div className="lg:col-span-6">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Who we are</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight mb-8">
+            <h2 className="font-display text-4xl md:text-5xl text-brand-green leading-tight mb-8">
               A studio for <em className="italic text-brand-indigo">considered</em> interiors.
             </h2>
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
@@ -162,7 +162,7 @@ function About() {
         <div className="container-px mx-auto max-w-7xl">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Leadership</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground">
+            <h2 className="font-display text-4xl md:text-5xl text-brand-green">
               The people behind <em className="italic text-brand-indigo">Filtronic.</em>
             </h2>
           </div>
@@ -179,7 +179,7 @@ function About() {
                   </div>
                 </div>
                 <div className="p-8">
-                  <h3 className="font-display text-2xl text-foreground">{l.n}</h3>
+                  <h3 className="font-display text-2xl text-brand-green">{l.n}</h3>
                   <p className="text-xs uppercase tracking-[0.25em] text-brand-green mt-2">
                     {l.r}
                   </p>
@@ -242,7 +242,7 @@ function About() {
       <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
         <div className="max-w-2xl mb-16">
           <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Why Filtronic Lifestyle</p>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight">
+          <h2 className="font-display text-4xl md:text-5xl text-brand-green leading-tight">
             Designed with <em className="italic text-brand-indigo">intention.</em> Built with care.
           </h2>
         </div>
@@ -264,7 +264,7 @@ function About() {
                 <div className="font-display text-brand-indigo text-sm mb-3">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <h3 className="font-display text-3xl md:text-4xl text-foreground mb-5">
+                <h3 className="font-display text-3xl md:text-4xl text-brand-green mb-5">
                   {row.t}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">{row.d}</p>
@@ -282,7 +282,7 @@ function About() {
               <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">
                 Google Reviews
               </p>
-              <h2 className="font-display text-4xl md:text-5xl text-foreground max-w-xl">
+              <h2 className="font-display text-4xl md:text-5xl text-brand-green max-w-xl">
                 Loved by our clients.
               </h2>
             </div>
@@ -329,7 +329,7 @@ function About() {
         <div className="grid lg:grid-cols-12 gap-10 items-center mb-12">
           <div className="lg:col-span-6">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Follow the studio</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl text-brand-green leading-tight">
               Step inside our <em className="italic text-brand-indigo">design diary.</em>
             </h2>
           </div>
@@ -359,7 +359,7 @@ function About() {
 
         {/* CTA */}
         <div className="mt-20 border-t border-border pt-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <h3 className="font-display text-3xl md:text-4xl max-w-xl text-foreground">
+          <h3 className="font-display text-3xl md:text-4xl max-w-xl text-brand-green">
             Curious about working with us?
           </h3>
           <div className="flex flex-wrap gap-3">

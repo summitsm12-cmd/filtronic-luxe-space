@@ -180,7 +180,7 @@ function Gallery() {
           <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-6">
             Portfolio
           </p>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-brand-green">
             Our <em className="italic text-brand-indigo">Projects.</em>
           </h1>
           <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
@@ -246,7 +246,7 @@ function Gallery() {
                   </div>
                 </div>
                 <div className="mt-4 flex items-baseline justify-between gap-3">
-                  <h3 className="font-display text-lg text-foreground group-hover:text-brand-green transition-colors">
+                  <h3 className="font-display text-lg text-brand-green group-hover:text-brand-green transition-colors">
                     {p.t}
                   </h3>
                   <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
@@ -369,7 +369,7 @@ function Lightbox({
           <div className="text-[10px] uppercase tracking-[0.25em] text-brand-green mb-3">
             {p.c}
           </div>
-          <h3 className="font-display text-3xl text-foreground leading-tight">
+          <h3 className="font-display text-3xl text-brand-green leading-tight">
             {p.t}
           </h3>
           <div className="mt-4 flex items-center gap-5 text-xs text-muted-foreground">

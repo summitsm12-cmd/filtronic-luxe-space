@@ -100,7 +100,7 @@ function Contact() {
           <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-6">
             Get in touch
           </p>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-brand-green">
             Let's Design Something <em className="italic text-brand-indigo">Beautiful</em> Together.
           </h1>
           <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
@@ -136,7 +136,7 @@ function Contact() {
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7 bg-card border border-border rounded-2xl p-8 lg:p-12 shadow-soft">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Enquiry form</p>
-            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-8">
+            <h2 className="font-display text-3xl md:text-4xl text-brand-green mb-8">
               Start a project.
             </h2>
             <form noValidate onSubmit={onSubmit} className="grid sm:grid-cols-2 gap-6">
@@ -213,7 +213,7 @@ function Contact() {
                 <span className="w-10 h-10 rounded-full bg-background text-brand-green flex items-center justify-center">
                   <Clock size={18} />
                 </span>
-                <h3 className="font-display text-xl text-foreground">Studio Hours</h3>
+                <h3 className="font-display text-xl text-brand-green">Studio Hours</h3>
               </div>
               <ul className="text-sm divide-y divide-border">
                 <li className="flex justify-between py-3">
@@ -261,7 +261,7 @@ function Contact() {
         <div className="grid lg:grid-cols-12 gap-8 items-stretch">
           <div className="lg:col-span-4">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Visit the studio</p>
-            <h2 className="font-display text-4xl text-foreground leading-tight mb-6">
+            <h2 className="font-display text-4xl text-brand-green leading-tight mb-6">
               Find us in <em className="italic text-brand-indigo">Chandrasekharpur.</em>
             </h2>
             <address className="not-italic text-muted-foreground leading-relaxed">
@@ -347,7 +347,7 @@ function ContactCard({
       <div className="w-12 h-12 rounded-full bg-accent text-brand-green flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
         <Icon size={20} />
       </div>
-      <h3 className="font-display text-xl text-foreground mb-3">{t}</h3>
+      <h3 className="font-display text-xl text-brand-green mb-3">{t}</h3>
       <div className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
         {lines.map((l) => (
           <div key={l}>{l}</div>
