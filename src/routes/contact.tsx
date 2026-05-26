@@ -26,7 +26,7 @@ export const Route = createFileRoute("/contact")({
       },
     ],
   }),
-  component: Contact;
+  component: Contact,
 });
 
 const ADDRESS_LINES = [
