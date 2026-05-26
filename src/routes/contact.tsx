@@ -235,7 +235,7 @@ function Contact() {
               href="https://wa.me/918658326019"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative p-8 bg-brand-indigo text-secondary-foreground rounded-2xl overflow-hidden hover-lift block"
+              className="group relative p-8 bg-surface text-foreground rounded-2xl overflow-hidden hover-lift block"
             >
               <div className="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-brand-green/40 blur-2xl" />
               <div className="relative">
@@ -295,16 +295,16 @@ function Contact() {
 
       {/* SECTION 5 — WHATSAPP CTA */}
       <section className="container-px mx-auto max-w-7xl pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-brand-indigo text-secondary-foreground p-12 md:p-20">
+        <div className="relative overflow-hidden rounded-3xl bg-surface text-foreground p-12 md:p-20">
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand-green/30 blur-3xl" />
           <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-brand-green/10 blur-3xl" />
           <div className="relative grid md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
                 Quick chat
               </p>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
-                A faster way to <em className="italic text-white/90">talk to us.</em>
+                A faster way to <em className="italic text-brand-indigo">talk to us.</em>
               </h2>
               <p className="mt-5 max-w-xl opacity-80">
                 Send us a message on WhatsApp — share a photo of your space,
@@ -316,7 +316,7 @@ function Contact() {
                 href="https://wa.me/918658326019"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-white hover:text-brand-indigo transition-colors duration-500 shadow-soft"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:text-white transition-colors duration-500 shadow-soft"
               >
                 <MessageCircle size={16} />
                 Chat on WhatsApp

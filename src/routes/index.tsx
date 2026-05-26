@@ -321,7 +321,7 @@ function Home() {
                 </div>
                 <p className="text-foreground/90 leading-relaxed">"{t.q}"</p>
                 <div className="mt-8 pt-6 border-t border-border flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-brand-indigo text-secondary-foreground flex items-center justify-center font-display">
+                  <div className="w-10 h-10 rounded-full bg-surface text-foreground flex items-center justify-center font-display">
                     {t.n.charAt(0)}
                   </div>
                   <div>
@@ -361,29 +361,29 @@ function Home() {
 
       {/* CTA BANNER */}
       <section className="container-px mx-auto max-w-7xl pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-brand-indigo text-secondary-foreground p-12 md:p-20">
+        <div className="relative overflow-hidden rounded-3xl bg-surface text-foreground p-12 md:p-20">
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand-green/30 blur-3xl" />
           <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-brand-green/10 blur-3xl" />
           <div className="relative grid md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
                 Ready when you are
               </p>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
-                Let's Design Your <em className="italic text-white/90">Dream Space.</em>
+                Let's Design Your <em className="italic text-brand-indigo">Dream Space.</em>
               </h2>
             </div>
             <div className="md:col-span-4 flex flex-wrap md:justify-end gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-white hover:text-brand-indigo transition-colors duration-500 shadow-soft"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:text-white transition-colors duration-500 shadow-soft"
               >
                 Book Consultation
                 <ArrowRight size={16} />
               </Link>
               <a
                 href="tel:+918658326019"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-md border border-white/30 text-secondary-foreground text-sm tracking-wide hover:bg-brand-green hover:border-brand-green transition-colors duration-500"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md border border-border text-secondary-foreground text-sm tracking-wide hover:bg-brand-green hover:border-brand-green transition-colors duration-500"
               >
                 <Phone size={14} />
                 Call now
