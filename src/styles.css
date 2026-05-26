@@ -57,7 +57,7 @@
   --radius: 0.5rem;
 
   --background: oklch(1 0 0);
-  --foreground: oklch(0.18 0.02 270);
+  --foreground: oklch(0.55 0.005 270);
 
   --surface: oklch(0.975 0.003 250);
   --surface-foreground: oklch(0.18 0.02 270);
