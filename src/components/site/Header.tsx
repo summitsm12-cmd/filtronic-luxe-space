@@ -30,12 +30,12 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container-px mx-auto max-w-7xl flex items-center justify-between h-20">
+      <div className="container-px mx-auto max-w-7xl flex items-center justify-between h-24">
         <Link to="/" className="flex items-center group">
           <img
             src={logo}
             alt="Filtronic Lifestyle Pvt Ltd"
-            className="h-12 md:h-14 w-auto object-contain"
+            className="h-16 md:h-20 w-auto object-contain"
           />
         </Link>
 
