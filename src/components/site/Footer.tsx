@@ -1,23 +1,21 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
     <footer className="bg-[#f5f5f5] text-foreground mt-32 border-t border-border">
       <div className="container-px mx-auto max-w-7xl py-20 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-5">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-md bg-brand-green flex items-center justify-center text-primary-foreground font-display text-lg">
-              F
-            </div>
-            <div className="leading-tight">
-              <div className="font-display text-lg text-foreground">Filtronic Lifestyle</div>
-              <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
-                Pvt Ltd
-              </div>
-            </div>
-          </div>
+          <Link to="/" className="inline-block">
+            <img
+              src={logo}
+              alt="Filtronic Lifestyle Pvt Ltd"
+              className="h-20 md:h-24 w-auto object-contain"
+            />
+          </Link>
           <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
+
             Crafting refined interiors where architecture, light and
             craftsmanship meet to shape modern living.
           </p>
