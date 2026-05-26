@@ -117,7 +117,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
-        <main className="flex-1 pt-24">
+        <main className="flex-1 pt-28 md:pt-32">
           <Outlet />
         </main>
         <Footer />
