@@ -383,7 +383,7 @@ function Home() {
               </Link>
               <a
                 href="tel:+918658326019"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-md border border-border text-secondary-foreground text-sm tracking-wide hover:bg-brand-green hover:border-brand-green transition-colors duration-500"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green border border-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:border-brand-indigo transition-colors duration-500"
               >
                 <Phone size={14} />
                 Call now
