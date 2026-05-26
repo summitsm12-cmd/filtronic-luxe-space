@@ -97,7 +97,7 @@ export function Header() {
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="mt-4 inline-flex justify-center items-center h-12 rounded-full bg-brand-indigo text-secondary-foreground text-sm"
+            className="mt-4 inline-flex justify-center items-center h-12 rounded-md bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors"
           >
             Book Consultation
           </Link>
