@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-[#f5f5f5] text-foreground mt-24 border-t border-border">
       <div className="container-px mx-auto max-w-7xl py-12 md:py-14 grid gap-10 md:gap-8 md:grid-cols-2 lg:grid-cols-4 items-start">
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start -mt-8">
           <Link to="/" className="inline-block -mt-3 md:-mt-4">
             <img
               src={logo}
@@ -15,15 +15,12 @@ export function Footer() {
             />
           </Link>
           <p className="mt-2 text-sm text-muted-foreground leading-relaxed w-[170px] md:w-[200px]">
-            Crafting refined interiors where architecture, light and
-            craftsmanship meet to shape modern living.
+            Crafting refined interiors where architecture, light and craftsmanship meet to shape modern living.
           </p>
         </div>
 
         <div>
-          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">
-            Quick Links
-          </h4>
+          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">Quick Links</h4>
           <ul className="space-y-3 text-sm">
             {[
               { to: "/", label: "Home" },
@@ -33,10 +30,7 @@ export function Footer() {
               { to: "/contact", label: "Contact" },
             ].map((l) => (
               <li key={l.to}>
-                <Link
-                  to={l.to}
-                  className="text-muted-foreground hover:text-brand-green transition-colors"
-                >
+                <Link to={l.to} className="text-muted-foreground hover:text-brand-green transition-colors">
                   {l.label}
                 </Link>
               </li>
@@ -45,9 +39,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">
-            Contact
-          </h4>
+          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">Contact</h4>
           <ul className="space-y-4 text-sm text-muted-foreground">
             <li className="flex gap-3">
               <MapPin size={16} className="mt-0.5 shrink-0 text-brand-green" />
@@ -73,9 +65,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">
-            Follow
-          </h4>
+          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">Follow</h4>
           <div className="flex gap-3">
             {[Instagram, Facebook, Linkedin, Youtube].map((Icon, i) => (
               <a
