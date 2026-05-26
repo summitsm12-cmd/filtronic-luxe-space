@@ -62,7 +62,7 @@ export function Header() {
         <div className="hidden lg:block">
           <Link
             to="/contact"
-            className="inline-flex items-center px-6 h-11 rounded-full bg-brand-indigo text-secondary-foreground text-sm tracking-wide hover:bg-brand-green transition-colors duration-500 shadow-soft"
+            className="inline-flex items-center px-6 h-11 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500 shadow-soft"
           >
             Book Consultation
           </Link>
@@ -97,7 +97,7 @@ export function Header() {
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="mt-4 inline-flex justify-center items-center h-12 rounded-full bg-brand-indigo text-secondary-foreground text-sm"
+            className="mt-4 inline-flex justify-center items-center h-12 rounded-md bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors"
           >
             Book Consultation
           </Link>

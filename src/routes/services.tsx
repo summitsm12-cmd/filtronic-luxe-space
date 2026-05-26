@@ -131,7 +131,7 @@ function Services() {
                 <div className="transition-transform duration-700 group-hover:scale-105">
                   <ImagePlaceholder label={s.t} ratio="4/5" />
                 </div>
-                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/90 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-md bg-background/90 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
                   {String(i + 1).padStart(2, "0")}
                 </div>
               </div>
@@ -224,29 +224,29 @@ function Services() {
 
       {/* CTA */}
       <section className="container-px mx-auto max-w-7xl pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-brand-indigo text-secondary-foreground p-12 md:p-20">
+        <div className="relative overflow-hidden rounded-3xl bg-surface text-foreground p-12 md:p-20">
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand-green/30 blur-3xl" />
           <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-brand-green/10 blur-3xl" />
           <div className="relative grid md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
                 Let's begin
               </p>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
-                Ready To Transform <em className="italic text-white/90">Your Space?</em>
+                Ready To Transform <em className="italic text-brand-indigo">Your Space?</em>
               </h2>
             </div>
             <div className="md:col-span-4 flex flex-wrap md:justify-end gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-white hover:text-brand-indigo transition-colors duration-500 shadow-soft"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:text-white transition-colors duration-500 shadow-soft"
               >
                 Book Free Consultation
                 <ArrowRight size={16} />
               </Link>
               <a
                 href="tel:+918658326019"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-full border border-white/30 text-secondary-foreground text-sm tracking-wide hover:bg-brand-green hover:border-brand-green transition-colors duration-500"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md border border-border text-secondary-foreground text-sm tracking-wide hover:bg-brand-green hover:border-brand-green transition-colors duration-500"
               >
                 <Phone size={14} />
                 Call now

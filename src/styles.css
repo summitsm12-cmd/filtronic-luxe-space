@@ -115,6 +115,11 @@
     font-family: var(--font-display);
     font-weight: 500;
     letter-spacing: -0.01em;
+    color: var(--brand-green);
+  }
+  /* Italic / em emphasis inside headings = indigo accent */
+  h1 em, h2 em, h3 em, h4 em {
+    color: var(--brand-indigo);
   }
 }
 

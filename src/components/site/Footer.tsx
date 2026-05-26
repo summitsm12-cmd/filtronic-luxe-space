@@ -3,28 +3,28 @@ import { Mail, MapPin, Phone, Instagram, Facebook, Linkedin, Youtube } from "luc
 
 export function Footer() {
   return (
-    <footer className="bg-brand-indigo text-secondary-foreground mt-32">
+    <footer className="bg-[#f5f5f5] text-foreground mt-32 border-t border-border">
       <div className="container-px mx-auto max-w-7xl py-20 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-5">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-brand-green flex items-center justify-center font-display text-lg">
+            <div className="w-10 h-10 rounded-md bg-brand-green flex items-center justify-center text-primary-foreground font-display text-lg">
               F
             </div>
             <div className="leading-tight">
-              <div className="font-display text-lg">Filtronic Lifestyle</div>
-              <div className="text-[10px] uppercase tracking-[0.25em] opacity-70">
+              <div className="font-display text-lg text-foreground">Filtronic Lifestyle</div>
+              <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
                 Pvt Ltd
               </div>
             </div>
           </div>
-          <p className="text-sm opacity-75 leading-relaxed max-w-xs">
+          <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
             Crafting refined interiors where architecture, light and
             craftsmanship meet to shape modern living.
           </p>
         </div>
 
         <div>
-          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 opacity-90">
+          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">
             Quick Links
           </h4>
           <ul className="space-y-3 text-sm">
@@ -38,7 +38,7 @@ export function Footer() {
               <li key={l.to}>
                 <Link
                   to={l.to}
-                  className="opacity-75 hover:opacity-100 hover:text-white transition-opacity"
+                  className="text-muted-foreground hover:text-brand-green transition-colors"
                 >
                   {l.label}
                 </Link>
@@ -48,27 +48,27 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 opacity-90">
+          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">
             Contact
           </h4>
-          <ul className="space-y-4 text-sm opacity-85">
+          <ul className="space-y-4 text-sm text-muted-foreground">
             <li className="flex gap-3">
-              <MapPin size={16} className="mt-0.5 shrink-0" />
+              <MapPin size={16} className="mt-0.5 shrink-0 text-brand-green" />
               <span>
-                Filtronic Lifestyle Pvt Ltd,
+                Plot No-198, Prachi Enclave, Phase 2,
                 <br />
-                Bhubaneswar, Odisha, India
+                Chandrasekharpur, Bhubaneswar, Odisha
               </span>
             </li>
             <li className="flex gap-3 items-center">
-              <Phone size={16} className="shrink-0" />
-              <a href="tel:+918658326019" className="hover:text-white">
+              <Phone size={16} className="shrink-0 text-brand-green" />
+              <a href="tel:+918658326019" className="hover:text-brand-green transition-colors">
                 +91 8658326019
               </a>
             </li>
             <li className="flex gap-3 items-center">
-              <Mail size={16} className="shrink-0" />
-              <a href="mailto:info@filtroniclifestyle.com" className="hover:text-white">
+              <Mail size={16} className="shrink-0 text-brand-green" />
+              <a href="mailto:info@filtroniclifestyle.com" className="hover:text-brand-green transition-colors">
                 info@filtroniclifestyle.com
               </a>
             </li>
@@ -76,7 +76,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 opacity-90">
+          <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">
             Follow
           </h4>
           <div className="flex gap-3">
@@ -85,22 +85,32 @@ export function Footer() {
                 key={i}
                 href="#"
                 aria-label="Social link"
-                className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-brand-green hover:border-brand-green transition-colors duration-500"
+                className="w-10 h-10 rounded-md bg-brand-green text-white flex items-center justify-center hover:bg-brand-indigo transition-colors duration-500"
               >
                 <Icon size={16} />
               </a>
             ))}
           </div>
-          <p className="text-xs opacity-60 mt-8 leading-relaxed">
+          <p className="text-xs text-muted-foreground mt-8 leading-relaxed">
             Subscribe to our journal for design stories and project unveilings.
           </p>
         </div>
       </div>
 
-      <div className="border-t border-white/10">
-        <div className="container-px mx-auto max-w-7xl py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs opacity-70">
+      <div className="border-t border-border">
+        <div className="container-px mx-auto max-w-7xl py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Filtronic Lifestyle Pvt Ltd. All rights reserved.</p>
-          <p>Designed with restraint. Built with care.</p>
+          <p>
+            Made with love by{" "}
+            <a
+              href="https://hexmontechnology.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-green hover:text-brand-indigo transition-colors font-medium"
+            >
+              Hexmon Technology
+            </a>
+          </p>
         </div>
       </div>
     </footer>

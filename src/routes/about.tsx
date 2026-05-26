@@ -205,13 +205,13 @@ function About() {
               "To transform <em className="italic text-brand-indigo">everyday spaces</em> into inspiring lifestyle experiences."
             </p>
           </div>
-          <div className="relative p-10 lg:p-14 bg-brand-indigo text-secondary-foreground rounded-2xl hover-lift overflow-hidden">
+          <div className="relative p-10 lg:p-14 bg-surface text-foreground rounded-2xl hover-lift overflow-hidden">
             <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-brand-green/30 blur-2xl" />
-            <p className="font-display text-white/80 text-sm tracking-[0.3em] uppercase mb-6">
+            <p className="font-display text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">
               Our Vision
             </p>
             <p className="font-display text-3xl md:text-4xl leading-snug">
-              "To become one of <em className="italic text-white/90">Odisha's most trusted</em> and innovative interior design brands."
+              "To become one of <em className="italic text-brand-indigo">Odisha's most trusted</em> and innovative interior design brands."
             </p>
           </div>
         </div>
@@ -310,7 +310,7 @@ function About() {
                 </div>
                 <p className="text-foreground/90 leading-relaxed text-sm">"{t.q}"</p>
                 <div className="mt-6 pt-5 border-t border-border flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-brand-indigo text-secondary-foreground flex items-center justify-center font-display text-sm">
+                  <div className="w-9 h-9 rounded-full bg-surface text-foreground flex items-center justify-center font-display text-sm">
                     {t.n.charAt(0)}
                   </div>
                   <div>
@@ -365,7 +365,7 @@ function About() {
           <div className="flex flex-wrap gap-3">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors duration-500"
+              className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors duration-500"
             >
               <Mail size={14} />
               Get in touch
@@ -373,7 +373,7 @@ function About() {
             </Link>
             <a
               href="tel:+918658326019"
-              className="inline-flex items-center gap-2 px-7 h-12 rounded-full border border-border text-foreground text-sm hover:border-brand-green hover:text-brand-green transition-colors duration-500"
+              className="inline-flex items-center gap-2 px-7 h-12 rounded-md border border-border text-foreground text-sm hover:border-brand-green hover:text-brand-green transition-colors duration-500"
             >
               <Phone size={14} />
               +91 8658326019

@@ -197,9 +197,9 @@ function Gallery() {
               <button
                 key={c}
                 onClick={() => setActive(c)}
-                className={`relative px-5 h-10 rounded-full text-sm tracking-wide border transition-all duration-500 ${
+                className={`relative px-5 h-10 rounded-md text-sm tracking-wide border transition-all duration-500 ${
                   isActive
-                    ? "bg-brand-indigo text-secondary-foreground border-brand-indigo shadow-soft"
+                    ? "bg-surface text-foreground border-brand-indigo shadow-soft"
                     : "bg-background text-foreground/70 border-border hover:border-brand-green hover:text-brand-green"
                 }`}
               >
@@ -241,7 +241,7 @@ function Gallery() {
                       {p.c} · {p.loc}
                     </div>
                   </div>
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/90 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
+                  <div className="absolute top-4 left-4 px-3 py-1 rounded-md bg-background/90 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
                     {p.c}
                   </div>
                 </div>
@@ -267,22 +267,22 @@ function Gallery() {
 
       {/* CTA */}
       <section className="container-px mx-auto max-w-7xl pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-brand-indigo text-secondary-foreground p-12 md:p-20">
+        <div className="relative overflow-hidden rounded-3xl bg-surface text-foreground p-12 md:p-20">
           <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand-green/30 blur-3xl" />
           <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-brand-green/10 blur-3xl" />
           <div className="relative grid md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8">
-              <p className="text-xs uppercase tracking-[0.3em] text-white/60 mb-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
                 Inspired?
               </p>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
-                Let's Create Your <em className="italic text-white/90">Dream Interior.</em>
+                Let's Create Your <em className="italic text-brand-indigo">Dream Interior.</em>
               </h2>
             </div>
             <div className="md:col-span-4 md:justify-self-end">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-white hover:text-brand-indigo transition-colors duration-500 shadow-soft"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:text-white transition-colors duration-500 shadow-soft"
               >
                 Start Your Project
                 <ArrowRight size={16} />
@@ -388,7 +388,7 @@ function Lightbox({
             </div>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-5 h-10 rounded-full bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors duration-500"
+              className="inline-flex items-center gap-2 px-5 h-10 rounded-md bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors duration-500"
             >
               Enquire
               <ArrowRight size={14} />
