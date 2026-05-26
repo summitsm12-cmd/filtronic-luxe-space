@@ -1,126 +1,393 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
-import { Award, Heart, Leaf, Users } from "lucide-react";
+import {
+  Award,
+  Clock,
+  Sparkles,
+  Users,
+  Quote,
+  Star,
+  Instagram,
+  Facebook,
+  Youtube,
+  Linkedin,
+  Mail,
+  Phone,
+  ArrowRight,
+} from "lucide-react";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Filtronic Lifestyle" },
-      { name: "description", content: "A modern interior design studio rooted in craft, restraint and meaningful spaces." },
+      { title: "About — Filtronic Lifestyle Pvt Ltd" },
+      {
+        name: "description",
+        content:
+          "Filtronic Lifestyle Pvt Ltd is a leading interior design company in Bhubaneswar — residential, commercial, modular kitchens and custom furniture.",
+      },
       { property: "og:title", content: "About — Filtronic Lifestyle" },
-      { property: "og:description", content: "Our story, our studio, our way of working." },
+      { property: "og:description", content: "Designing spaces that inspire living." },
     ],
   }),
   component: About,
 });
 
+const leaders = [
+  {
+    n: "Mr. Litan Barik",
+    r: "CEO / Director",
+    bio: "Visionary behind Filtronic Lifestyle, leading the studio's design direction and growth across Odisha.",
+  },
+  {
+    n: "Mr. Samira Sahoo",
+    r: "Managing Director",
+    bio: "Steers operations, execution and client relationships with a focus on craftsmanship and timely delivery.",
+  },
+];
+
+const stats = [
+  { k: "100+", v: "Projects Completed" },
+  { k: "50+", v: "Happy Clients" },
+  { k: "12+", v: "Years of Modern Design Expertise" },
+  { k: "100%", v: "Commitment to Timely Delivery" },
+];
+
+const why = [
+  {
+    t: "Modern Design Expertise",
+    d: "A contemporary studio language rooted in timeless interior principles — light, proportion and honest materials.",
+  },
+  {
+    t: "Craft-led Execution",
+    d: "Our in-house team and trusted craftsmen deliver finishes you can feel — joinery, stone, lighting and textiles.",
+  },
+  {
+    t: "Single-point Delivery",
+    d: "Concept, 3D, procurement and on-site execution under one roof. One team, one timeline, one accountable studio.",
+  },
+];
+
+const reviews = [
+  {
+    n: "Priya Mohanty",
+    r: "Residential client · Bhubaneswar",
+    q: "Filtronic transformed our apartment beyond what we imagined. Every corner feels intentional and refined.",
+  },
+  {
+    n: "Ankit Sharma",
+    r: "Office fit-out · Cuttack",
+    q: "Delivered our office on time, on budget, and with a finish that genuinely impresses every visitor.",
+  },
+  {
+    n: "Sneha Patro",
+    r: "Modular kitchen · Bhubaneswar",
+    q: "The kitchen is functional, gorgeous and built like furniture. The team is detail-obsessed in the best way.",
+  },
+  {
+    n: "Rohit Das",
+    r: "Villa interiors · Puri",
+    q: "From the first sketch to the final styling, the experience felt personal. The home feels truly ours.",
+  },
+];
+
+const socials = [
+  { i: Instagram, t: "Instagram", h: "@filtroniclifestyle", href: "#" },
+  { i: Facebook, t: "Facebook", h: "/filtroniclifestyle", href: "#" },
+  { i: Youtube, t: "YouTube", h: "/@filtroniclifestyle", href: "#" },
+  { i: Linkedin, t: "X / LinkedIn", h: "@filtronic", href: "#" },
+];
+
 function About() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="container-px mx-auto max-w-7xl py-20 lg:py-28">
-        <div className="max-w-3xl">
-          <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-6">About the studio</p>
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground reveal">
-            Designing with <em className="italic text-brand-indigo">intention,</em> not excess.
+    <div className="overflow-hidden">
+      {/* HERO */}
+      <section className="relative">
+        <div className="absolute inset-0 -z-10">
+          <div className="image-placeholder absolute inset-0 opacity-30" aria-hidden />
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background" />
+        </div>
+
+        <div className="container-px mx-auto max-w-7xl pt-12 lg:pt-20 pb-24 text-center">
+          <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-6 reveal">
+            About the studio
+          </p>
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-foreground max-w-4xl mx-auto reveal">
+            Designing Spaces That <em className="italic text-brand-indigo">Inspire Living.</em>
           </h1>
-          <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
-            Filtronic Lifestyle Pvt Ltd is an interior design and turnkey
-            studio. We believe great interiors aren't about more — they're
-            about what to leave out, what to repeat, and what to let breathe.
+          <p className="mt-8 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            A modern interior design studio rooted in craft, restraint and
+            meaningful spaces — based in Bhubaneswar, working across Odisha.
           </p>
         </div>
       </section>
 
-      {/* Two image storytelling */}
+      {/* SECTION 1 — INTRODUCTION */}
       <section className="container-px mx-auto max-w-7xl pb-24">
-        <div className="grid md:grid-cols-12 gap-6 lg:gap-10 items-center">
-          <div className="md:col-span-7">
-            <ImagePlaceholder label="Our Studio" ratio="16/10" className="rounded-2xl shadow-elegant" />
+        <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="lg:col-span-6">
+            <ImagePlaceholder label="Studio Interior" ratio="4/5" className="rounded-2xl shadow-elegant" />
           </div>
-          <div className="md:col-span-5 space-y-6">
-            <h2 className="font-display text-3xl md:text-4xl text-foreground">A studio rooted in craft.</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Founded with a love for honest materials and quiet detailing,
-              our team brings together architects, interior designers and
-              skilled craftsmen under one roof.
+          <div className="lg:col-span-6">
+            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Who we are</p>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight mb-8">
+              A studio for <em className="italic text-brand-indigo">considered</em> interiors.
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
+              Filtronic Lifestyle Pvt Ltd is a leading interior design company
+              in Bhubaneswar specializing in residential interiors, commercial
+              spaces, modular kitchens, and customized furniture solutions.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Every project we take on is treated as a singular object —
-              specific to its people, its city and its light.
+            <p className="mt-5 text-muted-foreground leading-relaxed">
+              We combine creativity, functionality, and precision craftsmanship
+              to create timeless interiors — spaces that age beautifully and
+              feel personal from day one.
             </p>
+
+            <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
+              {[
+                { k: "12+", v: "Years" },
+                { k: "100+", v: "Projects" },
+                { k: "8", v: "Cities" },
+              ].map((s) => (
+                <div key={s.v}>
+                  <div className="font-display text-3xl text-brand-indigo">{s.k}</div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">
+                    {s.v}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="bg-surface py-24">
+      {/* SECTION 2 — LEADERSHIP */}
+      <section className="bg-surface py-24 lg:py-32">
         <div className="container-px mx-auto max-w-7xl">
-          <div className="max-w-2xl mb-14">
-            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">What we value</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground">Principles that shape every project.</h2>
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Leadership</p>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground">
+              The people behind <em className="italic text-brand-indigo">Filtronic.</em>
+            </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { i: Heart, t: "People first", d: "Design that begins and ends with how you live." },
-              { i: Award, t: "Quiet luxury", d: "Material honesty over decoration." },
-              { i: Leaf, t: "Sustainable", d: "Mindful sourcing and lasting craftsmanship." },
-              { i: Users, t: "One team", d: "Designers and makers, working as one." },
-            ].map(({ i: Icon, t, d }) => (
-              <div key={t} className="p-8 bg-card border border-border rounded-2xl hover-lift">
-                <div className="w-12 h-12 rounded-full bg-accent text-brand-green flex items-center justify-center mb-6">
-                  <Icon size={20} />
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {leaders.map((l) => (
+              <div
+                key={l.n}
+                className="group bg-card border border-border rounded-2xl overflow-hidden hover-lift"
+              >
+                <div className="overflow-hidden">
+                  <div className="transition-transform duration-700 group-hover:scale-105">
+                    <ImagePlaceholder label={l.n} ratio="4/3" />
+                  </div>
                 </div>
-                <h3 className="font-display text-xl text-foreground mb-3">{t}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{d}</p>
+                <div className="p-8">
+                  <h3 className="font-display text-2xl text-foreground">{l.n}</h3>
+                  <p className="text-xs uppercase tracking-[0.25em] text-brand-green mt-2">
+                    {l.r}
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed mt-5">
+                    {l.bio}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="container-px mx-auto max-w-7xl py-24">
-        <div className="flex items-end justify-between gap-6 mb-12">
-          <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">The team</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground">People behind the work.</h2>
+      {/* SECTION 3 — MISSION & VISION */}
+      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
+        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+          <div className="relative p-10 lg:p-14 bg-card border border-border rounded-2xl hover-lift overflow-hidden">
+            <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-brand-green/5 blur-2xl" />
+            <p className="font-display text-brand-green text-sm tracking-[0.3em] uppercase mb-6">
+              Our Mission
+            </p>
+            <p className="font-display text-3xl md:text-4xl text-foreground leading-snug">
+              "To transform <em className="italic text-brand-indigo">everyday spaces</em> into inspiring lifestyle experiences."
+            </p>
+          </div>
+          <div className="relative p-10 lg:p-14 bg-brand-indigo text-secondary-foreground rounded-2xl hover-lift overflow-hidden">
+            <div className="absolute -bottom-16 -left-16 w-56 h-56 rounded-full bg-brand-green/30 blur-2xl" />
+            <p className="font-display text-white/80 text-sm tracking-[0.3em] uppercase mb-6">
+              Our Vision
+            </p>
+            <p className="font-display text-3xl md:text-4xl leading-snug">
+              "To become one of <em className="italic text-white/90">Odisha's most trusted</em> and innovative interior design brands."
+            </p>
           </div>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {[
-            { n: "Founder", r: "Principal Designer" },
-            { n: "Design Lead", r: "Interiors" },
-            { n: "Architect", r: "Spatial Planning" },
-            { n: "Project Lead", r: "Execution" },
-          ].map((m) => (
-            <div key={m.n} className="group">
-              <div className="overflow-hidden rounded-2xl">
-                <div className="transition-transform duration-700 group-hover:scale-105">
-                  <ImagePlaceholder label={m.n} ratio="3/4" />
-                </div>
+      </section>
+
+      {/* SECTION 4 — STATISTICS */}
+      <section className="bg-surface py-20">
+        <div className="container-px mx-auto max-w-7xl grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6">
+          {stats.map((s, i) => (
+            <div
+              key={s.v}
+              className={`text-center md:text-left md:px-8 ${
+                i !== 0 ? "lg:border-l border-border" : ""
+              }`}
+            >
+              <div className="font-display text-5xl md:text-6xl text-brand-indigo">
+                {s.k}
               </div>
-              <h3 className="font-display text-xl text-foreground mt-5">{m.n}</h3>
-              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">{m.r}</p>
+              <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-3 max-w-[14ch] mx-auto md:mx-0">
+                {s.v}
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="container-px mx-auto max-w-7xl pb-24">
-        <div className="border-t border-border pt-16 flex flex-col md:flex-row items-start md:items-end justify-between gap-6">
-          <h2 className="font-display text-3xl md:text-4xl max-w-xl text-foreground">
-            Curious about working with us?
+      {/* SECTION 5 — WHY FILTRONIC */}
+      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
+        <div className="max-w-2xl mb-16">
+          <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Why Filtronic Lifestyle</p>
+          <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight">
+            Designed with <em className="italic text-brand-indigo">intention.</em> Built with care.
           </h2>
-          <Link
-            to="/contact"
-            className="inline-flex items-center px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors duration-500"
-          >
-            Get in touch
-          </Link>
+        </div>
+
+        <div className="space-y-20 lg:space-y-28">
+          {why.map((row, i) => (
+            <div
+              key={row.t}
+              className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center"
+            >
+              <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
+                <ImagePlaceholder
+                  label={row.t}
+                  ratio="16/10"
+                  className="rounded-2xl shadow-elegant"
+                />
+              </div>
+              <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                <div className="font-display text-brand-indigo text-sm mb-3">
+                  {String(i + 1).padStart(2, "0")}
+                </div>
+                <h3 className="font-display text-3xl md:text-4xl text-foreground mb-5">
+                  {row.t}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">{row.d}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SECTION 6 — GOOGLE REVIEWS */}
+      <section className="bg-surface py-24 lg:py-32">
+        <div className="container-px mx-auto max-w-7xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">
+                Google Reviews
+              </p>
+              <h2 className="font-display text-4xl md:text-5xl text-foreground max-w-xl">
+                Loved by our clients.
+              </h2>
+            </div>
+            <div className="flex items-center gap-3 text-sm text-muted-foreground">
+              <div className="flex">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} size={16} className="fill-brand-green text-brand-green" />
+                ))}
+              </div>
+              <span>4.9 average · 80+ reviews</span>
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {reviews.map((t) => (
+              <div
+                key={t.n}
+                className="relative p-7 bg-card border border-border rounded-2xl hover-lift"
+              >
+                <Quote size={22} className="text-brand-green/30" />
+                <div className="flex mt-3 mb-4">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} size={12} className="fill-brand-green text-brand-green" />
+                  ))}
+                </div>
+                <p className="text-foreground/90 leading-relaxed text-sm">"{t.q}"</p>
+                <div className="mt-6 pt-5 border-t border-border flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-full bg-brand-indigo text-secondary-foreground flex items-center justify-center font-display text-sm">
+                    {t.n.charAt(0)}
+                  </div>
+                  <div>
+                    <div className="text-sm font-medium text-foreground">{t.n}</div>
+                    <div className="text-[11px] text-muted-foreground">{t.r}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 7 — SOCIAL MEDIA */}
+      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
+        <div className="grid lg:grid-cols-12 gap-10 items-center mb-12">
+          <div className="lg:col-span-6">
+            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Follow the studio</p>
+            <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight">
+              Step inside our <em className="italic text-brand-indigo">design diary.</em>
+            </h2>
+          </div>
+          <div className="lg:col-span-6 text-muted-foreground leading-relaxed">
+            Behind-the-scenes, project unveilings and material inspiration —
+            shared across our social channels.
+          </div>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {socials.map(({ i: Icon, t, h, href }) => (
+            <a
+              key={t}
+              href={href}
+              className="group p-7 bg-card border border-border rounded-2xl hover-lift flex items-center gap-4"
+            >
+              <div className="w-12 h-12 rounded-full bg-accent text-brand-green flex items-center justify-center group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
+                <Icon size={20} />
+              </div>
+              <div className="min-w-0">
+                <div className="font-display text-lg text-foreground">{t}</div>
+                <div className="text-xs text-muted-foreground truncate">{h}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="mt-20 border-t border-border pt-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <h3 className="font-display text-3xl md:text-4xl max-w-xl text-foreground">
+            Curious about working with us?
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors duration-500"
+            >
+              <Mail size={14} />
+              Get in touch
+              <ArrowRight size={14} />
+            </Link>
+            <a
+              href="tel:+918658326019"
+              className="inline-flex items-center gap-2 px-7 h-12 rounded-full border border-border text-foreground text-sm hover:border-brand-green hover:text-brand-green transition-colors duration-500"
+            >
+              <Phone size={14} />
+              +91 8658326019
+            </a>
+          </div>
         </div>
       </section>
     </div>
   );
 }
+
+// Silence unused warnings for icons reserved for future hooks
+void Award; void Clock; void Sparkles; void Users;
