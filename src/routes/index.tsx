@@ -129,7 +129,7 @@ function Home() {
                 to="/contact"
                 className="inline-flex items-center px-7 h-12 rounded-md border border-border bg-background/70 backdrop-blur text-foreground text-sm tracking-wide hover:border-brand-green hover:text-brand-green transition-colors duration-500"
               >
-                Free Consultation
+                Book Consultation
               </Link>
             </div>
           </div>
