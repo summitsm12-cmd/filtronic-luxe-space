@@ -107,7 +107,7 @@ function Home() {
               <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse" />
               Interior Design Studio · Bhubaneswar
             </div>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-[5.25rem] leading-[1.02] text-foreground tracking-tight">
+            <h1 className="font-display text-5xl md:text-6xl lg:text-[5.25rem] leading-[1.02] text-brand-green tracking-tight">
               Absolutely Transformative
               <br />
               And <em className="italic text-brand-indigo">Stylish</em> Designs
@@ -200,7 +200,7 @@ function Home() {
         <div className="grid lg:grid-cols-12 gap-10 mb-16">
           <div className="lg:col-span-5">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Featured services</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl text-brand-green leading-tight">
               A studio built for <em className="italic text-brand-indigo">every detail.</em>
             </h2>
           </div>
@@ -219,7 +219,7 @@ function Home() {
               <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-brand-green mb-6 group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
                 <Icon size={20} />
               </div>
-              <h3 className="font-display text-xl text-foreground mb-3">{t}</h3>
+              <h3 className="font-display text-xl text-brand-green mb-3">{t}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{d}</p>
               <ArrowUpRight
                 size={18}
@@ -235,7 +235,7 @@ function Home() {
         <div className="container-px mx-auto max-w-7xl">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Why choose us</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground">
+            <h2 className="font-display text-4xl md:text-5xl text-brand-green">
               Built on craft, <em className="italic text-brand-indigo">trusted</em> for delivery.
             </h2>
           </div>
@@ -250,7 +250,7 @@ function Home() {
                   <Icon size={20} />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-foreground mb-2">{t}</h3>
+                  <h3 className="font-display text-xl text-brand-green mb-2">{t}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{d}</p>
                 </div>
               </div>
@@ -264,7 +264,7 @@ function Home() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Featured projects</p>
-            <h2 className="font-display text-4xl md:text-5xl text-foreground">
+            <h2 className="font-display text-4xl md:text-5xl text-brand-green">
               Recent work.
             </h2>
           </div>
@@ -293,7 +293,7 @@ function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Client stories</p>
-              <h2 className="font-display text-4xl md:text-5xl text-foreground max-w-xl">
+              <h2 className="font-display text-4xl md:text-5xl text-brand-green max-w-xl">
                 Reviewed by the people who live in our work.
               </h2>
             </div>
@@ -339,7 +339,7 @@ function Home() {
       <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Our process</p>
-          <h2 className="font-display text-4xl md:text-5xl text-foreground">
+          <h2 className="font-display text-4xl md:text-5xl text-brand-green">
             Clarity, then <em className="italic text-brand-indigo">craft.</em>
           </h2>
         </div>
@@ -352,7 +352,7 @@ function Home() {
                 ●
               </div>
               <div className="font-display text-brand-indigo text-sm mt-6">{s.n}</div>
-              <h3 className="font-display text-xl text-foreground mt-2 mb-3">{s.t}</h3>
+              <h3 className="font-display text-xl text-brand-green mt-2 mb-3">{s.t}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{s.d}</p>
             </div>
           ))}
