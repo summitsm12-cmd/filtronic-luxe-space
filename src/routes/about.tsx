@@ -1,10 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import {
-  Award,
-  Clock,
-  Sparkles,
-  Users,
   Quote,
   Star,
   Instagram,
