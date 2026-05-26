@@ -6,15 +6,15 @@ export function Footer() {
   return (
     <footer className="bg-[#f5f5f5] text-foreground mt-24 border-t border-border">
       <div className="container-px mx-auto max-w-7xl py-12 md:py-14 grid gap-10 md:gap-8 md:grid-cols-2 lg:grid-cols-4 items-start">
-        <div className="flex flex-col items-start -mt-8">
-          <Link to="/" className="inline-block -mt-3 md:-mt-4">
+        <div className="flex flex-col items-start -mt-6">
+          <Link to="/" className="inline-block">
             <img
               src={logo}
               alt="Filtronic Lifestyle Pvt Ltd"
               className="w-[140px] md:w-[170px] h-auto object-contain block"
             />
           </Link>
-          <p className="mt-2 text-sm text-muted-foreground leading-relaxed w-[170px] md:w-[200px]">
+          <p className="-mt-2 text-sm text-muted-foreground leading-relaxed w-[170px] md:w-[200px]">
             Crafting refined interiors where architecture, light and craftsmanship meet to shape modern living.
           </p>
         </div>
