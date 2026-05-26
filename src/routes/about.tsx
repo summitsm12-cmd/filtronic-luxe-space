@@ -384,6 +384,3 @@ function About() {
     </div>
   );
 }
-
-// Silence unused warnings for icons reserved for future hooks
-void Award; void Clock; void Sparkles; void Users;
