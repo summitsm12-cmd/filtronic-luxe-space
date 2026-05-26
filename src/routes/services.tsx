@@ -131,7 +131,7 @@ function Services() {
                 <div className="transition-transform duration-700 group-hover:scale-105">
                   <ImagePlaceholder label={s.t} ratio="4/5" />
                 </div>
-                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-background/90 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-md bg-background/90 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
                   {String(i + 1).padStart(2, "0")}
                 </div>
               </div>
@@ -239,14 +239,14 @@ function Services() {
             <div className="md:col-span-4 flex flex-wrap md:justify-end gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-white hover:text-brand-indigo transition-colors duration-500 shadow-soft"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-white hover:text-brand-indigo transition-colors duration-500 shadow-soft"
               >
                 Book Free Consultation
                 <ArrowRight size={16} />
               </Link>
               <a
                 href="tel:+918658326019"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-full border border-white/30 text-secondary-foreground text-sm tracking-wide hover:bg-brand-green hover:border-brand-green transition-colors duration-500"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md border border-white/30 text-secondary-foreground text-sm tracking-wide hover:bg-brand-green hover:border-brand-green transition-colors duration-500"
               >
                 <Phone size={14} />
                 Call now

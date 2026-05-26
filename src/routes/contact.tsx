@@ -192,7 +192,7 @@ function Contact() {
                 </p>
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2 px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500 shadow-soft"
+                  className="inline-flex items-center justify-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500 shadow-soft"
                 >
                   Send enquiry
                   <Send size={16} />
@@ -316,7 +316,7 @@ function Contact() {
                 href="https://wa.me/918658326019"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-white hover:text-brand-indigo transition-colors duration-500 shadow-soft"
+                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-white hover:text-brand-indigo transition-colors duration-500 shadow-soft"
               >
                 <MessageCircle size={16} />
                 Chat on WhatsApp

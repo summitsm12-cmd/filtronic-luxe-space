@@ -365,7 +365,7 @@ function About() {
           <div className="flex flex-wrap gap-3">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-7 h-12 rounded-full bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors duration-500"
+              className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm hover:bg-brand-indigo transition-colors duration-500"
             >
               <Mail size={14} />
               Get in touch
@@ -373,7 +373,7 @@ function About() {
             </Link>
             <a
               href="tel:+918658326019"
-              className="inline-flex items-center gap-2 px-7 h-12 rounded-full border border-border text-foreground text-sm hover:border-brand-green hover:text-brand-green transition-colors duration-500"
+              className="inline-flex items-center gap-2 px-7 h-12 rounded-md border border-border text-foreground text-sm hover:border-brand-green hover:text-brand-green transition-colors duration-500"
             >
               <Phone size={14} />
               +91 8658326019
