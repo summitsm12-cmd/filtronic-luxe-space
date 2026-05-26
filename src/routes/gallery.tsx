@@ -359,7 +359,7 @@ function Lightbox({
       </button>
 
       <div
-        className="relative w-full max-w-6xl bg-background rounded-2xl overflow-hidden shadow-elegant grid lg:grid-cols-12 scale-in"
+        className="relative w-full max-w-6xl bg-background rounded-2xl overflow-hidden shadow-elegant grid lg:grid-cols-12 fade-in"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="lg:col-span-8">
