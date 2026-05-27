@@ -10,6 +10,17 @@ import service3dHouseImg from "@/assets/service-3d-house.jpg";
 import serviceFurniturePartnerImg from "@/assets/service-furniture-partner.jpg";
 import serviceSpacePlanningImg from "@/assets/service-space-planning.jpg";
 import serviceCustomFurnitureImg from "@/assets/service-custom-furniture.jpg";
+import pillarDesignApproachImg from "@/assets/pillar-design-approach.jpg";
+import pillarMaterialSelectionImg from "@/assets/pillar-material-selection.jpg";
+import pillarSpaceOptimizationImg from "@/assets/pillar-space-optimization.jpg";
+import pillarTurnkeyExecutionImg from "@/assets/pillar-turnkey-execution.jpg";
+
+const pillarImages = [
+  pillarDesignApproachImg,
+  pillarMaterialSelectionImg,
+  pillarSpaceOptimizationImg,
+  pillarTurnkeyExecutionImg,
+];
 
 const serviceImages = [
   serviceResidentialImg,
@@ -195,11 +206,16 @@ function Services() {
                 className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center"
               >
                 <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <ImagePlaceholder
-                    label={row.t}
-                    ratio="16/10"
-                    className="rounded-2xl shadow-elegant"
-                  />
+                  <div
+                    className="relative overflow-hidden rounded-2xl shadow-elegant"
+                    style={{ aspectRatio: "16/10" }}
+                  >
+                    <img
+                      src={pillarImages[i]}
+                      alt={row.t}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
                 <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
                   <div className="font-display text-brand-indigo text-sm mb-3">
