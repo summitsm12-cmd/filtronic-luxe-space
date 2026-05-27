@@ -127,34 +127,34 @@ function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/0 to-background" />
         </div>
 
-        <div className="container-px mx-auto max-w-7xl grid lg:grid-cols-12 gap-10 lg:gap-16 pt-12 lg:pt-20 pb-32 items-center">
+        <div className="container-px mx-auto max-w-7xl grid lg:grid-cols-12 gap-10 lg:gap-16 pt-6 sm:pt-10 lg:pt-20 pb-20 sm:pb-24 lg:pb-32 items-center">
           {/* Left */}
           <div className="lg:col-span-7 reveal">
-            <div className="inline-flex items-center gap-2 px-4 h-9 rounded-md border border-border bg-background/70 backdrop-blur text-xs uppercase tracking-[0.25em] text-brand-green mb-8">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 h-8 sm:h-9 rounded-md border border-border bg-background/70 backdrop-blur text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-brand-green mb-5 sm:mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse" />
               Interior Design Studio
             </div>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-[5.25rem] leading-[1.02] text-brand-green tracking-tight">
+            <h1 className="font-display text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-[5.25rem] lg:leading-[1.02] text-brand-green tracking-tight">
               Absolutely Transformative
               <br />
               And <em className="italic text-brand-indigo">Stylish</em> Designs
             </h1>
-            <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="mt-5 sm:mt-8 text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
               Filtronic Lifestyle creates premium residential and commercial
               interiors in Bhubaneswar with modern aesthetics, functionality,
               and timeless craftsmanship.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-7 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
               <Link
                 to="/gallery"
-                className="group inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500 shadow-soft"
+                className="group inline-flex items-center gap-2 px-5 sm:px-7 h-11 sm:h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500 shadow-soft"
               >
                 Explore Projects
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center px-7 h-12 rounded-md border border-border bg-background/70 backdrop-blur text-foreground text-sm tracking-wide hover:border-brand-green hover:text-brand-green transition-colors duration-500"
+                className="inline-flex items-center px-5 sm:px-7 h-11 sm:h-12 rounded-md border border-border bg-background/70 backdrop-blur text-foreground text-sm tracking-wide hover:border-brand-green hover:text-brand-green transition-colors duration-500"
               >
                 Book Consultation
               </Link>
@@ -162,7 +162,7 @@ function Home() {
           </div>
 
           {/* Right — layered featured project card */}
-          <div className="lg:col-span-5 relative reveal">
+          <div className="lg:col-span-5 relative reveal mt-4 lg:mt-0">
             <img
               src={heroFeaturedImg}
               alt="Featured Project"
