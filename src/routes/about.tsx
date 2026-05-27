@@ -276,10 +276,11 @@ function About() {
               className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center"
             >
               <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                <ImagePlaceholder
-                  label={row.t}
-                  ratio="16/10"
-                  className="rounded-2xl shadow-elegant"
+                <img
+                  src={[whyModernDesignImg, whyCraftExecutionImg, whySingleDeliveryImg][i]}
+                  alt={row.t}
+                  className="w-full rounded-2xl shadow-elegant object-cover"
+                  style={{ aspectRatio: "16/10" }}
                 />
               </div>
               <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
