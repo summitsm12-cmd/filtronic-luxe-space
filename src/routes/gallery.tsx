@@ -81,7 +81,7 @@ const projects: Project[] = [
     c: "Living Room",
     r: "4/5",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A serene living space anchored by warm oak, travertine and curated lighting.",
   },
   {
@@ -89,7 +89,7 @@ const projects: Project[] = [
     c: "Residential",
     r: "1/1",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A modern home with garden views, soft palette and quietly luxurious detailing.",
   },
   {
@@ -97,7 +97,7 @@ const projects: Project[] = [
     c: "Office",
     r: "4/3",
     loc: "Cuttack",
-    year: "2023",
+    year: "2026",
     d: "An open-plan workspace built for focus and collaboration.",
   },
   {
@@ -105,7 +105,7 @@ const projects: Project[] = [
     c: "Commercial",
     r: "4/5",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A flagship retail experience with sculpted joinery and gallery-grade lighting.",
   },
   {
@@ -113,7 +113,7 @@ const projects: Project[] = [
     c: "Kitchen",
     r: "1/1",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "Modular kitchen in matte lacquer and natural stone with hidden appliances.",
   },
   {
@@ -121,7 +121,7 @@ const projects: Project[] = [
     c: "Commercial",
     r: "4/3",
     loc: "Puri",
-    year: "2023",
+    year: "2026",
     d: "A hospitality interior layering brass, linen and hand-finished plaster.",
   },
   {
@@ -129,7 +129,7 @@ const projects: Project[] = [
     c: "Bedroom",
     r: "4/5",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "Soft-textured master bedroom with bespoke headboard and reading nook.",
   },
   {
@@ -137,7 +137,7 @@ const projects: Project[] = [
     c: "Living Room",
     r: "4/3",
     loc: "Cuttack",
-    year: "2023",
+    year: "2026",
     d: "A double-height living room opening to the garden through pivot doors.",
   },
   {
@@ -145,7 +145,7 @@ const projects: Project[] = [
     c: "Bedroom",
     r: "1/1",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A wardrobe room engineered as furniture — fluted wood, leather pulls, gallery lighting.",
   },
   {
@@ -153,7 +153,7 @@ const projects: Project[] = [
     c: "Office",
     r: "4/5",
     loc: "Bhubaneswar",
-    year: "2023",
+    year: "2026",
     d: "A refined executive cabin with custom desk and acoustic paneling.",
   },
   {
@@ -161,7 +161,7 @@ const projects: Project[] = [
     c: "Residential",
     r: "1/1",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A guest suite that opens to a private courtyard.",
   },
   {
@@ -169,7 +169,7 @@ const projects: Project[] = [
     c: "Living Room",
     r: "4/5",
     loc: "Cuttack",
-    year: "2024",
+    year: "2025",
     d: "A library-inspired lounge with full-height shelving and a fireplace.",
   },
 ];
