@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import litanBarikImg from "@/assets/litan-barik.jpg";
 import samiraSahooImg from "@/assets/samira-sahoo.jpg";
+import studioInteriorImg from "@/assets/studio-interior.jpg";
 import {
   Quote,
   Star,
@@ -123,7 +124,7 @@ function About() {
       <section className="container-px mx-auto max-w-7xl pb-24">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <div className="lg:col-span-6">
-            <ImagePlaceholder label="Studio Interior" ratio="4/5" className="rounded-2xl shadow-elegant" />
+            <img src={studioInteriorImg} alt="Studio Interior" className="w-full rounded-2xl shadow-elegant object-cover" style={{ aspectRatio: "4/5" }} />
           </div>
           <div className="lg:col-span-6">
             <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Who we are</p>
