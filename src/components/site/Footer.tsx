@@ -100,17 +100,6 @@ export function Footer() {
           </p>
         </div>
       </div>
-            <a
-              href="https://hexmontechnology.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-brand-green hover:text-brand-indigo transition-colors font-medium"
-            >
-              Hexmon Technology
-            </a>
-          </p>
-        </div>
-      </div>
     </footer>
   );
 }
