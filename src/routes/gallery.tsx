@@ -2,6 +2,21 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import { ArrowRight, X, ChevronLeft, ChevronRight, MapPin, Calendar } from "lucide-react";
 import { useEffect, useState } from "react";
+import projectQuietHouseImg from "@/assets/project-quiet-house.jpg";
+import projectMaisonVerdeImg from "@/assets/project-maison-verde.jpg";
+import projectStudioLumenImg from "@/assets/project-studio-lumen.jpg";
+import projectAtelier22Img from "@/assets/project-atelier-22.jpg";
+import projectBrassLinenImg from "@/assets/project-brass-linen.jpg";
+import serviceKitchenImg from "@/assets/service-kitchen.jpg";
+
+const projectImages: Record<string, string> = {
+  "The Quiet House": projectQuietHouseImg,
+  "Maison Verde": projectMaisonVerdeImg,
+  "Studio Lumen": projectStudioLumenImg,
+  "Atelier 22": projectAtelier22Img,
+  "Brass & Linen": projectBrassLinenImg,
+  "Italian Kitchen": serviceKitchenImg,
+};
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
