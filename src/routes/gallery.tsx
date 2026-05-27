@@ -8,6 +8,11 @@ import projectStudioLumenImg from "@/assets/project-studio-lumen.jpg";
 import projectAtelier22Img from "@/assets/project-atelier-22.jpg";
 import projectBrassLinenImg from "@/assets/project-brass-linen.jpg";
 import serviceKitchenImg from "@/assets/service-kitchen.jpg";
+import projectGardenSuiteImg from "@/assets/project-garden-suite.jpg";
+import projectMasterSuiteImg from "@/assets/project-master-suite.jpg";
+import projectWalkinWardrobeImg from "@/assets/project-walkin-wardrobe.jpg";
+import projectGardenLivingImg from "@/assets/project-garden-living.jpg";
+import projectExecutiveCabinImg from "@/assets/project-executive-cabin.jpg";
 
 const projectImages: Record<string, string> = {
   "The Quiet House": projectQuietHouseImg,
@@ -16,6 +21,11 @@ const projectImages: Record<string, string> = {
   "Atelier 22": projectAtelier22Img,
   "Brass & Linen": projectBrassLinenImg,
   "Italian Kitchen": serviceKitchenImg,
+  "Garden Suite": projectGardenSuiteImg,
+  "Master Suite": projectMasterSuiteImg,
+  "Walk-in Wardrobe": projectWalkinWardrobeImg,
+  "Garden Living": projectGardenLivingImg,
+  "Executive Cabin": projectExecutiveCabinImg,
 };
 
 export const Route = createFileRoute("/gallery")({
@@ -71,7 +81,7 @@ const projects: Project[] = [
     c: "Living Room",
     r: "4/5",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A serene living space anchored by warm oak, travertine and curated lighting.",
   },
   {
@@ -79,7 +89,7 @@ const projects: Project[] = [
     c: "Residential",
     r: "1/1",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A modern home with garden views, soft palette and quietly luxurious detailing.",
   },
   {
@@ -87,7 +97,7 @@ const projects: Project[] = [
     c: "Office",
     r: "4/3",
     loc: "Cuttack",
-    year: "2023",
+    year: "2026",
     d: "An open-plan workspace built for focus and collaboration.",
   },
   {
@@ -95,7 +105,7 @@ const projects: Project[] = [
     c: "Commercial",
     r: "4/5",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A flagship retail experience with sculpted joinery and gallery-grade lighting.",
   },
   {
@@ -103,7 +113,7 @@ const projects: Project[] = [
     c: "Kitchen",
     r: "1/1",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "Modular kitchen in matte lacquer and natural stone with hidden appliances.",
   },
   {
@@ -111,7 +121,7 @@ const projects: Project[] = [
     c: "Commercial",
     r: "4/3",
     loc: "Puri",
-    year: "2023",
+    year: "2026",
     d: "A hospitality interior layering brass, linen and hand-finished plaster.",
   },
   {
@@ -119,7 +129,7 @@ const projects: Project[] = [
     c: "Bedroom",
     r: "4/5",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "Soft-textured master bedroom with bespoke headboard and reading nook.",
   },
   {
@@ -127,7 +137,7 @@ const projects: Project[] = [
     c: "Living Room",
     r: "4/3",
     loc: "Cuttack",
-    year: "2023",
+    year: "2026",
     d: "A double-height living room opening to the garden through pivot doors.",
   },
   {
@@ -135,7 +145,7 @@ const projects: Project[] = [
     c: "Bedroom",
     r: "1/1",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A wardrobe room engineered as furniture — fluted wood, leather pulls, gallery lighting.",
   },
   {
@@ -143,31 +153,15 @@ const projects: Project[] = [
     c: "Office",
     r: "4/5",
     loc: "Bhubaneswar",
-    year: "2023",
+    year: "2026",
     d: "A refined executive cabin with custom desk and acoustic paneling.",
-  },
-  {
-    t: "Chef's Kitchen",
-    c: "Kitchen",
-    r: "4/3",
-    loc: "Puri",
-    year: "2024",
-    d: "A pro-grade kitchen for a serious home cook — quartzite tops, walnut cabinetry.",
-  },
-  {
-    t: "Boutique Lobby",
-    c: "Commercial",
-    r: "4/5",
-    loc: "Bhubaneswar",
-    year: "2023",
-    d: "Lobby of a boutique stay — tactile materials and a sculptural reception desk.",
   },
   {
     t: "Garden Suite",
     c: "Residential",
     r: "1/1",
     loc: "Bhubaneswar",
-    year: "2024",
+    year: "2025",
     d: "A guest suite that opens to a private courtyard.",
   },
   {
@@ -175,7 +169,7 @@ const projects: Project[] = [
     c: "Living Room",
     r: "4/5",
     loc: "Cuttack",
-    year: "2024",
+    year: "2025",
     d: "A library-inspired lounge with full-height shelving and a fireplace.",
   },
 ];
