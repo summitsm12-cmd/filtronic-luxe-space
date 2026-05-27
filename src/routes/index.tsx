@@ -382,61 +382,65 @@ function Home() {
       </section>
 
       {/* PROCESS */}
-      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Our process</p>
-          <h2 className="font-display text-4xl md:text-5xl text-brand-green">
+      <section className="container-px mx-auto max-w-7xl py-16 sm:py-20 lg:py-32">
+        <Reveal className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+          <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Our process</p>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green">
             Clarity, then <em className="italic text-brand-indigo">craft.</em>
           </h2>
-        </div>
+        </Reveal>
 
-        <div className="relative grid md:grid-cols-5 gap-8">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 sm:gap-6">
           <div className="hidden md:block absolute top-3 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-          {process.map((s) => (
-            <div key={s.n} className="text-center group">
-              <div className="mx-auto w-7 h-7 rounded-full bg-background border-2 border-brand-green flex items-center justify-center text-[10px] text-brand-green relative z-10 group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
-                ●
+          {process.map((s, i) => (
+            <Reveal key={s.n} delay={i * 80} className="text-center">
+              <div className="group">
+                <div className="mx-auto w-7 h-7 rounded-full bg-background border-2 border-brand-green flex items-center justify-center text-[10px] text-brand-green relative z-10 group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
+                  ●
+                </div>
+                <div className="font-display text-brand-indigo text-sm mt-4 sm:mt-6">{s.n}</div>
+                <h3 className="font-display text-lg sm:text-xl text-brand-green mt-2 mb-2 sm:mb-3">{s.t}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{s.d}</p>
               </div>
-              <div className="font-display text-brand-indigo text-sm mt-6">{s.n}</div>
-              <h3 className="font-display text-xl text-brand-green mt-2 mb-3">{s.t}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{s.d}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* CTA BANNER */}
-      <section className="container-px mx-auto max-w-7xl pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-surface text-foreground p-12 md:p-20">
-          <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand-green/30 blur-3xl" />
-          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-brand-green/10 blur-3xl" />
-          <div className="relative grid md:grid-cols-12 gap-8 items-center">
-            <div className="md:col-span-8">
-              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
-                Ready when you are
-              </p>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
-                Let's Design Your <em className="italic text-brand-indigo">Dream Space.</em>
-              </h2>
-            </div>
-            <div className="md:col-span-4 flex flex-wrap md:justify-end gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:text-white transition-colors duration-500 shadow-soft"
-              >
-                Book Consultation
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href="tel:+918658326019"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green border border-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:border-brand-indigo transition-colors duration-500"
-              >
-                <Phone size={14} />
-                Call now
-              </a>
+      <section className="container-px mx-auto max-w-7xl pb-16 sm:pb-20 lg:pb-24">
+        <Reveal>
+          <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-surface text-foreground p-8 sm:p-12 md:p-20">
+            <div className="absolute -top-24 -right-24 w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-brand-green/30 blur-3xl" />
+            <div className="absolute -bottom-32 -left-20 w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-brand-green/10 blur-3xl" />
+            <div className="relative grid md:grid-cols-12 gap-6 sm:gap-8 items-center">
+              <div className="md:col-span-8">
+                <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-muted-foreground mb-3 sm:mb-4">
+                  Ready when you are
+                </p>
+                <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+                  Let's Design Your <em className="italic text-brand-indigo">Dream Space.</em>
+                </h2>
+              </div>
+              <div className="md:col-span-4 flex flex-wrap md:justify-end gap-3 sm:gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-5 sm:px-7 h-11 sm:h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:text-white transition-colors duration-500 shadow-soft"
+                >
+                  Book Consultation
+                  <ArrowRight size={16} />
+                </Link>
+                <a
+                  href="tel:+918658326019"
+                  className="inline-flex items-center gap-2 px-5 sm:px-7 h-11 sm:h-12 rounded-md bg-brand-green border border-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:border-brand-indigo transition-colors duration-500"
+                >
+                  <Phone size={14} />
+                  Call now
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </section>
     </div>
   );
