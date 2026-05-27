@@ -229,48 +229,49 @@ function Home() {
       </section>
 
       {/* FEATURED SERVICES */}
-      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
-        <div className="grid lg:grid-cols-12 gap-10 mb-16">
-          <div className="lg:col-span-5">
-            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Featured services</p>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-green leading-tight">
+      <section className="container-px mx-auto max-w-7xl py-16 sm:py-20 lg:py-32">
+        <div className="grid lg:grid-cols-12 gap-6 sm:gap-10 mb-10 sm:mb-16">
+          <Reveal className="lg:col-span-5">
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Featured services</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green leading-tight">
               A studio built for <em className="italic text-brand-indigo">every detail.</em>
             </h2>
-          </div>
-          <div className="lg:col-span-6 lg:col-start-7 text-muted-foreground leading-relaxed self-end">
+          </Reveal>
+          <Reveal delay={120} className="lg:col-span-6 lg:col-start-7 text-sm sm:text-base text-muted-foreground leading-relaxed self-end">
             From concept to handover, we offer a fully integrated design and
             execution practice — so every detail stays true to the original idea.
-          </div>
+          </Reveal>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {services.map(({ icon: Icon, t, d }, i) => (
-            <div
-              key={t}
-              className="group relative flex flex-col bg-white border border-[#e5e7eb] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
-            >
-              <div className="relative h-44 overflow-hidden rounded-t-2xl">
-                <img
-                  src={serviceImages[i]}
-                  alt={t}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute top-4 left-4 w-11 h-11 rounded-full bg-white/95 backdrop-blur flex items-center justify-center text-brand-green shadow-soft">
-                  <Icon size={18} />
+            <Reveal key={t} delay={i * 70}>
+              <div
+                className="group relative flex flex-col h-full bg-white border border-[#e5e7eb] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
+              >
+                <div className="relative h-40 sm:h-44 overflow-hidden rounded-t-2xl">
+                  <img
+                    src={serviceImages[i]}
+                    alt={t}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/95 backdrop-blur flex items-center justify-center text-brand-green shadow-soft">
+                    <Icon size={18} />
+                  </div>
+                </div>
+                <div className="flex flex-col flex-1 p-5 sm:p-6 text-center items-center">
+                  <h3 className="font-display text-lg sm:text-xl text-brand-green mb-2 sm:mb-3">{t}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-5 sm:mb-6">{d}</p>
+                  <Link
+                    to="/services"
+                    className="mt-auto inline-flex items-center justify-center h-10 w-[140px] bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500"
+                    style={{ borderRadius: "6px" }}
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </div>
-              <div className="flex flex-col flex-1 p-6 text-center items-center">
-                <h3 className="font-display text-xl text-brand-green mb-3">{t}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-6">{d}</p>
-                <Link
-                  to="/services"
-                  className="mt-auto inline-flex items-center justify-center h-10 w-[140px] bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500"
-                  style={{ borderRadius: "6px" }}
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
