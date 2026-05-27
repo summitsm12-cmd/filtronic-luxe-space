@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import litanBarikImg from "@/assets/litan-barik.jpg";
+import samiraSahooImg from "@/assets/samira-sahoo.jpg";
 import {
   Quote,
   Star,
@@ -179,6 +180,13 @@ function About() {
                     {l.n === "Mr. Litan Barik" ? (
                       <img
                         src={litanBarikImg}
+                        alt={l.n}
+                        className="w-full h-full object-cover"
+                        style={{ aspectRatio: "4/3" }}
+                      />
+                    ) : l.n === "Mr. Samira Sahoo" ? (
+                      <img
+                        src={samiraSahooImg}
                         alt={l.n}
                         className="w-full h-full object-cover"
                         style={{ aspectRatio: "4/3" }}
