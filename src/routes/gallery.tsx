@@ -2,6 +2,21 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import { ArrowRight, X, ChevronLeft, ChevronRight, MapPin, Calendar } from "lucide-react";
 import { useEffect, useState } from "react";
+import projectQuietHouseImg from "@/assets/project-quiet-house.jpg";
+import projectMaisonVerdeImg from "@/assets/project-maison-verde.jpg";
+import projectStudioLumenImg from "@/assets/project-studio-lumen.jpg";
+import projectAtelier22Img from "@/assets/project-atelier-22.jpg";
+import projectBrassLinenImg from "@/assets/project-brass-linen.jpg";
+import serviceKitchenImg from "@/assets/service-kitchen.jpg";
+
+const projectImages: Record<string, string> = {
+  "The Quiet House": projectQuietHouseImg,
+  "Maison Verde": projectMaisonVerdeImg,
+  "Studio Lumen": projectStudioLumenImg,
+  "Atelier 22": projectAtelier22Img,
+  "Brass & Linen": projectBrassLinenImg,
+  "Italian Kitchen": serviceKitchenImg,
+};
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -232,7 +247,17 @@ function Gallery() {
               >
                 <div className="relative overflow-hidden rounded-2xl">
                   <div className="transition-transform duration-700 group-hover:scale-110">
-                    <ImagePlaceholder label={p.t} ratio={p.r} />
+                    {projectImages[p.t] ? (
+                      <img
+                        src={projectImages[p.t]}
+                        alt={p.t}
+                        loading="lazy"
+                        className="w-full h-auto block object-cover"
+                        style={{ aspectRatio: p.r }}
+                      />
+                    ) : (
+                      <ImagePlaceholder label={p.t} ratio={p.r} />
+                    )}
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/0 to-foreground/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 text-background">
@@ -363,7 +388,16 @@ function Lightbox({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="lg:col-span-8">
-          <ImagePlaceholder label={p.t} ratio="4/3" />
+          {projectImages[p.t] ? (
+            <img
+              src={projectImages[p.t]}
+              alt={p.t}
+              className="w-full h-full object-cover"
+              style={{ aspectRatio: "4/3" }}
+            />
+          ) : (
+            <ImagePlaceholder label={p.t} ratio="4/3" />
+          )}
         </div>
         <div className="lg:col-span-4 p-8 lg:p-10 flex flex-col">
           <div className="text-[10px] uppercase tracking-[0.25em] text-brand-green mb-3">
