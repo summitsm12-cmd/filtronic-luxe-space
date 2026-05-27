@@ -252,14 +252,14 @@ function Home() {
             {whyUs.map(({ icon: Icon, t, d }) => (
               <div
                 key={t}
-                className="group p-8 bg-card border border-border rounded-2xl hover-lift flex gap-5"
+                className="group p-8 bg-brand-green hover:bg-brand-indigo border border-transparent rounded-2xl flex gap-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
               >
-                <div className="w-12 h-12 rounded-full bg-brand-indigo/10 text-brand-indigo flex items-center justify-center shrink-0 group-hover:bg-brand-indigo group-hover:text-secondary-foreground transition-colors duration-500">
+                <div className="w-12 h-12 rounded-full bg-white/15 text-white flex items-center justify-center shrink-0 transition-colors duration-500">
                   <Icon size={20} />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-brand-green mb-2">{t}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{d}</p>
+                  <h3 className="font-display text-xl text-white mb-2">{t}</h3>
+                  <p className="text-sm text-white/85 leading-relaxed">{d}</p>
                 </div>
               </div>
             ))}
