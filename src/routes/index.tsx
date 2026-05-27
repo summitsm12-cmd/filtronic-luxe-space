@@ -2,6 +2,25 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import heroFeaturedImg from "@/assets/hero-featured.jpg";
 import heroDetailImg from "@/assets/hero-detail.jpg";
+import serviceResidentialImg from "@/assets/service-residential.jpg";
+import serviceCommercialImg from "@/assets/service-commercial.jpg";
+import serviceConsultationImg from "@/assets/service-consultation.jpg";
+import serviceKitchenImg from "@/assets/service-kitchen.jpg";
+import service3dHouseImg from "@/assets/service-3d-house.jpg";
+import serviceFurniturePartnerImg from "@/assets/service-furniture-partner.jpg";
+import serviceSpacePlanningImg from "@/assets/service-space-planning.jpg";
+import serviceCustomFurnitureImg from "@/assets/service-custom-furniture.jpg";
+
+const serviceImages = [
+  serviceResidentialImg,
+  serviceCommercialImg,
+  serviceConsultationImg,
+  serviceKitchenImg,
+  service3dHouseImg,
+  serviceFurniturePartnerImg,
+  serviceSpacePlanningImg,
+  serviceCustomFurnitureImg,
+];
 import {
   ArrowRight,
   ArrowUpRight,
