@@ -2,6 +2,25 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import { ArrowRight, ArrowUpRight, Minus, Plus, Phone } from "lucide-react";
 import { useState } from "react";
+import serviceResidentialImg from "@/assets/service-residential.jpg";
+import serviceCommercialImg from "@/assets/service-commercial.jpg";
+import serviceConsultationImg from "@/assets/service-consultation.jpg";
+import serviceKitchenImg from "@/assets/service-kitchen.jpg";
+import service3dHouseImg from "@/assets/service-3d-house.jpg";
+import serviceFurniturePartnerImg from "@/assets/service-furniture-partner.jpg";
+import serviceSpacePlanningImg from "@/assets/service-space-planning.jpg";
+import serviceCustomFurnitureImg from "@/assets/service-custom-furniture.jpg";
+
+const serviceImages = [
+  serviceResidentialImg,
+  serviceCommercialImg,
+  serviceConsultationImg,
+  serviceKitchenImg,
+  service3dHouseImg,
+  serviceFurniturePartnerImg,
+  serviceSpacePlanningImg,
+  serviceCustomFurnitureImg,
+];
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -127,10 +146,12 @@ function Services() {
               key={s.t}
               className="group flex flex-col bg-card border border-border rounded-2xl overflow-hidden hover-lift"
             >
-              <div className="relative overflow-hidden">
-                <div className="transition-transform duration-700 group-hover:scale-105">
-                  <ImagePlaceholder label={s.t} ratio="4/5" />
-                </div>
+              <div className="relative overflow-hidden" style={{ aspectRatio: "4/5" }}>
+                <img
+                  src={serviceImages[i]}
+                  alt={s.t}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 <div className="absolute top-4 left-4 px-3 py-1 rounded-md bg-background/90 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
                   {String(i + 1).padStart(2, "0")}
                 </div>
