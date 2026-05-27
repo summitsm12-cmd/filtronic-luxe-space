@@ -344,31 +344,34 @@ function ContactCard({
 }) {
   const body = (
     <>
-      <div className="w-12 h-12 rounded-full bg-accent text-brand-green flex items-center justify-center mb-6 group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
+      <div className="w-12 h-12 rounded-full bg-white/15 text-white flex items-center justify-center mb-6 transition-colors duration-300">
         <Icon size={20} />
       </div>
-      <h3 className="font-display text-xl text-brand-green mb-3">{t}</h3>
-      <div className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
+      <h3 className="font-display text-xl text-white mb-3">{t}</h3>
+      <div className="text-white/85 text-sm leading-relaxed whitespace-pre-line">
         {lines.map((l) => (
           <div key={l}>{l}</div>
         ))}
       </div>
       {cta && (
-        <span className="mt-6 inline-flex items-center gap-2 text-sm text-brand-indigo group-hover:text-brand-green transition-colors">
+        <span className="mt-6 inline-flex items-center gap-2 text-sm text-white">
           {cta}
           <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
         </span>
       )}
     </>
   );
+  const cardClass =
+    "group p-8 bg-brand-green hover:bg-brand-indigo border border-transparent rounded-2xl shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)] hover:-translate-y-1 transition-all duration-300";
   return href ? (
-    <a href={href} className="group p-8 bg-card border border-border rounded-2xl hover-lift block">
+    <a href={href} className={`${cardClass} block`}>
       {body}
     </a>
   ) : (
-    <div className="group p-8 bg-card border border-border rounded-2xl hover-lift">{body}</div>
+    <div className={cardClass}>{body}</div>
   );
 }
+
 
 function Field({
   label,
