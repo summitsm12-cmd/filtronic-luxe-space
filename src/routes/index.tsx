@@ -222,12 +222,12 @@ function Home() {
                   <Icon size={18} />
                 </div>
               </div>
-              <div className="flex flex-col flex-1 p-6">
+              <div className="flex flex-col flex-1 p-6 text-center items-center">
                 <h3 className="font-display text-xl text-brand-green mb-3">{t}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-6">{d}</p>
                 <Link
                   to="/services"
-                  className="mt-auto inline-flex items-center justify-center h-10 px-5 bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500"
+                  className="mt-auto inline-flex items-center justify-center h-10 w-[140px] bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500"
                   style={{ borderRadius: "6px" }}
                 >
                   Learn More
