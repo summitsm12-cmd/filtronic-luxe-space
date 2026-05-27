@@ -214,17 +214,25 @@ function Home() {
           {services.map(({ icon: Icon, t, d }) => (
             <div
               key={t}
-              className="group relative p-8 bg-card border border-border rounded-2xl hover-lift overflow-hidden"
+              className="group relative flex flex-col bg-white border border-[#e5e7eb] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
             >
-              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-brand-green mb-6 group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
-                <Icon size={20} />
+              <div className="relative h-44 overflow-hidden rounded-t-2xl">
+                <ImagePlaceholder label={t} ratio="auto" className="!h-full" />
+                <div className="absolute top-4 left-4 w-11 h-11 rounded-full bg-white/95 backdrop-blur flex items-center justify-center text-brand-green shadow-soft">
+                  <Icon size={18} />
+                </div>
               </div>
-              <h3 className="font-display text-xl text-brand-green mb-3">{t}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{d}</p>
-              <ArrowUpRight
-                size={18}
-                className="absolute top-6 right-6 text-brand-indigo opacity-0 group-hover:opacity-100 group-hover:rotate-45 transition-all duration-500"
-              />
+              <div className="flex flex-col flex-1 p-6">
+                <h3 className="font-display text-xl text-brand-green mb-3">{t}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-6">{d}</p>
+                <Link
+                  to="/services"
+                  className="mt-auto inline-flex items-center justify-center h-10 px-5 bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500"
+                  style={{ borderRadius: "6px" }}
+                >
+                  Learn More
+                </Link>
+              </div>
             </div>
           ))}
         </div>
