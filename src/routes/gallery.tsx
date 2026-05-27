@@ -247,7 +247,17 @@ function Gallery() {
               >
                 <div className="relative overflow-hidden rounded-2xl">
                   <div className="transition-transform duration-700 group-hover:scale-110">
-                    <ImagePlaceholder label={p.t} ratio={p.r} />
+                    {projectImages[p.t] ? (
+                      <img
+                        src={projectImages[p.t]}
+                        alt={p.t}
+                        loading="lazy"
+                        className="w-full h-auto block object-cover"
+                        style={{ aspectRatio: p.r }}
+                      />
+                    ) : (
+                      <ImagePlaceholder label={p.t} ratio={p.r} />
+                    )}
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/0 to-foreground/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 text-background">
