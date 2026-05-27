@@ -3,6 +3,9 @@ import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import litanBarikImg from "@/assets/litan-barik.jpg";
 import samiraSahooImg from "@/assets/samira-sahoo.jpg";
 import studioInteriorImg from "@/assets/studio-interior.jpg";
+import whyModernDesignImg from "@/assets/why-modern-design.jpg";
+import whyCraftExecutionImg from "@/assets/why-craft-execution.jpg";
+import whySingleDeliveryImg from "@/assets/why-single-delivery.jpg";
 import {
   Quote,
   Star,
@@ -273,10 +276,11 @@ function About() {
               className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center"
             >
               <div className={`lg:col-span-7 ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                <ImagePlaceholder
-                  label={row.t}
-                  ratio="16/10"
-                  className="rounded-2xl shadow-elegant"
+                <img
+                  src={[whyModernDesignImg, whyCraftExecutionImg, whySingleDeliveryImg][i]}
+                  alt={row.t}
+                  className="w-full rounded-2xl shadow-elegant object-cover"
+                  style={{ aspectRatio: "16/10" }}
                 />
               </div>
               <div className={`lg:col-span-5 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
