@@ -164,14 +164,6 @@ const projects: Project[] = [
     year: "2025",
     d: "A guest suite that opens to a private courtyard.",
   },
-  {
-    t: "Reading Lounge",
-    c: "Living Room",
-    r: "4/5",
-    loc: "Cuttack",
-    year: "2025",
-    d: "A library-inspired lounge with full-height shelving and a fireplace.",
-  },
 ];
 
 function Gallery() {
