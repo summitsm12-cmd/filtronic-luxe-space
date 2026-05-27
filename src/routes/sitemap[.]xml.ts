@@ -1,7 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-const BASE_URL = "";
+function getSiteUrl() {
+  const explicitUrl = process.env.SITE_URL ?? process.env.VITE_SITE_URL;
+  const vercelUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+  const siteUrl = explicitUrl ?? (vercelUrl ? `https://${vercelUrl}` : "");
+
+  return siteUrl.replace(/\/$/, "");
+}
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
@@ -14,12 +20,13 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/gallery", priority: "0.8" },
           { path: "/contact", priority: "0.8" },
         ];
+        const siteUrl = getSiteUrl();
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
           `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
           ...entries.map(
             (e) =>
-              `  <url><loc>${BASE_URL}${e.path}</loc><changefreq>weekly</changefreq><priority>${e.priority}</priority></url>`,
+              `  <url><loc>${siteUrl}${e.path}</loc><changefreq>weekly</changefreq><priority>${e.priority}</priority></url>`,
           ),
           `</urlset>`,
         ].join("\n");
