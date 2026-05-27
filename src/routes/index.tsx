@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
+import { Reveal } from "@/components/site/Reveal";
 import heroFeaturedImg from "@/assets/hero-featured.jpg";
 import heroDetailImg from "@/assets/hero-detail.jpg";
 import serviceResidentialImg from "@/assets/service-residential.jpg";
