@@ -2,6 +2,25 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import heroFeaturedImg from "@/assets/hero-featured.jpg";
 import heroDetailImg from "@/assets/hero-detail.jpg";
+import serviceResidentialImg from "@/assets/service-residential.jpg";
+import serviceCommercialImg from "@/assets/service-commercial.jpg";
+import serviceConsultationImg from "@/assets/service-consultation.jpg";
+import serviceKitchenImg from "@/assets/service-kitchen.jpg";
+import service3dHouseImg from "@/assets/service-3d-house.jpg";
+import serviceFurniturePartnerImg from "@/assets/service-furniture-partner.jpg";
+import serviceSpacePlanningImg from "@/assets/service-space-planning.jpg";
+import serviceCustomFurnitureImg from "@/assets/service-custom-furniture.jpg";
+
+const serviceImages = [
+  serviceResidentialImg,
+  serviceCommercialImg,
+  serviceConsultationImg,
+  serviceKitchenImg,
+  service3dHouseImg,
+  serviceFurniturePartnerImg,
+  serviceSpacePlanningImg,
+  serviceCustomFurnitureImg,
+];
 import {
   ArrowRight,
   ArrowUpRight,
@@ -219,13 +238,17 @@ function Home() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map(({ icon: Icon, t, d }) => (
+          {services.map(({ icon: Icon, t, d }, i) => (
             <div
               key={t}
               className="group relative flex flex-col bg-white border border-[#e5e7eb] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
             >
               <div className="relative h-44 overflow-hidden rounded-t-2xl">
-                <ImagePlaceholder label={t} ratio="auto" className="!h-full" />
+                <img
+                  src={serviceImages[i]}
+                  alt={t}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 <div className="absolute top-4 left-4 w-11 h-11 rounded-full bg-white/95 backdrop-blur flex items-center justify-center text-brand-green shadow-soft">
                   <Icon size={18} />
                 </div>
