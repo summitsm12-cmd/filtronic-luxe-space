@@ -8,6 +8,11 @@ import projectStudioLumenImg from "@/assets/project-studio-lumen.jpg";
 import projectAtelier22Img from "@/assets/project-atelier-22.jpg";
 import projectBrassLinenImg from "@/assets/project-brass-linen.jpg";
 import serviceKitchenImg from "@/assets/service-kitchen.jpg";
+import projectGardenSuiteImg from "@/assets/project-garden-suite.jpg";
+import projectMasterSuiteImg from "@/assets/project-master-suite.jpg";
+import projectWalkinWardrobeImg from "@/assets/project-walkin-wardrobe.jpg";
+import projectGardenLivingImg from "@/assets/project-garden-living.jpg";
+import projectExecutiveCabinImg from "@/assets/project-executive-cabin.jpg";
 
 const projectImages: Record<string, string> = {
   "The Quiet House": projectQuietHouseImg,
@@ -16,6 +21,11 @@ const projectImages: Record<string, string> = {
   "Atelier 22": projectAtelier22Img,
   "Brass & Linen": projectBrassLinenImg,
   "Italian Kitchen": serviceKitchenImg,
+  "Garden Suite": projectGardenSuiteImg,
+  "Master Suite": projectMasterSuiteImg,
+  "Walk-in Wardrobe": projectWalkinWardrobeImg,
+  "Garden Living": projectGardenLivingImg,
+  "Executive Cabin": projectExecutiveCabinImg,
 };
 
 export const Route = createFileRoute("/gallery")({
