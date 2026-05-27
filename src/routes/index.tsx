@@ -277,29 +277,30 @@ function Home() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="bg-surface py-24 lg:py-32">
+      <section className="bg-surface py-16 sm:py-20 lg:py-32">
         <div className="container-px mx-auto max-w-7xl">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Why choose us</p>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-green">
+          <Reveal className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Why choose us</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green">
               Built on craft, <em className="italic text-brand-indigo">trusted</em> for delivery.
             </h2>
-          </div>
+          </Reveal>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whyUs.map(({ icon: Icon, t, d }) => (
-              <div
-                key={t}
-                className="group p-8 bg-brand-green hover:bg-brand-indigo border border-transparent rounded-2xl flex gap-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
-              >
-                <div className="w-12 h-12 rounded-full bg-white/15 text-white flex items-center justify-center shrink-0 transition-colors duration-500">
-                  <Icon size={20} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {whyUs.map(({ icon: Icon, t, d }, i) => (
+              <Reveal key={t} delay={i * 70}>
+                <div
+                  className="group h-full p-6 sm:p-8 bg-brand-green hover:bg-brand-indigo border border-transparent rounded-2xl flex gap-4 sm:gap-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
+                >
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/15 text-white flex items-center justify-center shrink-0 transition-colors duration-500">
+                    <Icon size={20} />
+                  </div>
+                  <div>
+                    <h3 className="font-display text-lg sm:text-xl text-white mb-1.5 sm:mb-2">{t}</h3>
+                    <p className="text-sm text-white/85 leading-relaxed">{d}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-display text-xl text-white mb-2">{t}</h3>
-                  <p className="text-sm text-white/85 leading-relaxed">{d}</p>
-                </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
