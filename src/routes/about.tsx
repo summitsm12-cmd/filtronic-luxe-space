@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
+import litanBarikImg from "@/assets/litan-barik.jpg";
 import {
   Quote,
   Star,
@@ -175,7 +176,16 @@ function About() {
               >
                 <div className="overflow-hidden">
                   <div className="transition-transform duration-700 group-hover:scale-105">
-                    <ImagePlaceholder label={l.n} ratio="4/3" />
+                    {l.n === "Mr. Litan Barik" ? (
+                      <img
+                        src={litanBarikImg}
+                        alt={l.n}
+                        className="w-full h-full object-cover"
+                        style={{ aspectRatio: "4/3" }}
+                      />
+                    ) : (
+                      <ImagePlaceholder label={l.n} ratio="4/3" />
+                    )}
                   </div>
                 </div>
                 <div className="p-8">
