@@ -307,14 +307,14 @@ function Home() {
       </section>
 
       {/* FEATURED PROJECTS PREVIEW */}
-      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-          <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Featured projects</p>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-green">
+      <section className="container-px mx-auto max-w-7xl py-16 sm:py-20 lg:py-32">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-5 sm:gap-6 mb-10 sm:mb-14">
+          <Reveal>
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Featured projects</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green">
               Recent work.
             </h2>
-          </div>
+          </Reveal>
           <Link
             to="/gallery"
             className="text-sm tracking-wide text-brand-indigo hover:text-brand-green transition-colors inline-flex items-center gap-2 group"
@@ -325,7 +325,7 @@ function Home() {
         </div>
 
         {/* Editorial gallery grid */}
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-6 auto-rows-[180px]">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 sm:gap-6 auto-rows-[220px] sm:auto-rows-[180px]">
           <FeaturedTile className="md:col-span-4 md:row-span-2" image={projectQuietHouseImg} label="The Quiet House" />
           <FeaturedTile className="md:col-span-2 md:row-span-1" image={projectStudioLumenImg} label="Studio Lumen" />
           <FeaturedTile className="md:col-span-2 md:row-span-1" image={projectBrassLinenImg} label="Brass & Linen" />
