@@ -335,15 +335,15 @@ function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="bg-surface py-24 lg:py-32">
+      <section className="bg-surface py-16 sm:py-20 lg:py-32">
         <div className="container-px mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Client stories</p>
-              <h2 className="font-display text-4xl md:text-5xl text-brand-green max-w-xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-5 sm:gap-6 mb-10 sm:mb-14">
+            <Reveal>
+              <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Client stories</p>
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green max-w-xl">
                 Reviewed by the people who live in our work.
               </h2>
-            </div>
+            </Reveal>
             <div className="flex items-center gap-3 text-sm text-muted-foreground">
               <div className="flex">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -354,29 +354,28 @@ function Home() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div
-                key={t.n}
-                className="relative p-8 bg-card border border-border rounded-2xl hover-lift"
-              >
-                <Quote size={28} className="text-brand-green/30" />
-                <div className="flex mt-4 mb-5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} size={14} className="fill-brand-green text-brand-green" />
-                  ))}
-                </div>
-                <p className="text-foreground/90 leading-relaxed">"{t.q}"</p>
-                <div className="mt-8 pt-6 border-t border-border flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-surface text-foreground flex items-center justify-center font-display">
-                    {t.n.charAt(0)}
+          <div className="grid md:grid-cols-3 gap-5 sm:gap-6">
+            {testimonials.map((t, i) => (
+              <Reveal key={t.n} delay={i * 100}>
+                <div className="relative h-full p-6 sm:p-8 bg-card border border-border rounded-2xl hover-lift">
+                  <Quote size={28} className="text-brand-green/30" />
+                  <div className="flex mt-3 sm:mt-4 mb-4 sm:mb-5">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} size={14} className="fill-brand-green text-brand-green" />
+                    ))}
                   </div>
-                  <div>
-                    <div className="text-sm font-medium text-foreground">{t.n}</div>
-                    <div className="text-xs text-muted-foreground">{t.r}</div>
+                  <p className="text-foreground/90 leading-relaxed text-sm sm:text-base">"{t.q}"</p>
+                  <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-border flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-surface text-foreground flex items-center justify-center font-display">
+                      {t.n.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-foreground">{t.n}</div>
+                      <div className="text-xs text-muted-foreground">{t.r}</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
