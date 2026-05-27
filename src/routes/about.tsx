@@ -3,6 +3,9 @@ import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
 import litanBarikImg from "@/assets/litan-barik.jpg";
 import samiraSahooImg from "@/assets/samira-sahoo.jpg";
 import studioInteriorImg from "@/assets/studio-interior.jpg";
+import whyModernDesignImg from "@/assets/why-modern-design.jpg";
+import whyCraftExecutionImg from "@/assets/why-craft-execution.jpg";
+import whySingleDeliveryImg from "@/assets/why-single-delivery.jpg";
 import {
   Quote,
   Star,
