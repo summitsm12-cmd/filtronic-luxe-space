@@ -157,22 +157,6 @@ const projects: Project[] = [
     d: "A refined executive cabin with custom desk and acoustic paneling.",
   },
   {
-    t: "Chef's Kitchen",
-    c: "Kitchen",
-    r: "4/3",
-    loc: "Puri",
-    year: "2024",
-    d: "A pro-grade kitchen for a serious home cook — quartzite tops, walnut cabinetry.",
-  },
-  {
-    t: "Boutique Lobby",
-    c: "Commercial",
-    r: "4/5",
-    loc: "Bhubaneswar",
-    year: "2023",
-    d: "Lobby of a boutique stay — tactile materials and a sculptural reception desk.",
-  },
-  {
     t: "Garden Suite",
     c: "Residential",
     r: "1/1",
