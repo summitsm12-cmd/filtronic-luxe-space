@@ -85,10 +85,21 @@ export function Footer() {
       </div>
 
       <div className="border-t border-border">
-        <div className="container-px mx-auto max-w-7xl py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+        <div className="container-px mx-auto max-w-7xl py-5 sm:py-6 flex flex-col md:flex-row items-center justify-between gap-2 sm:gap-3 text-xs text-muted-foreground text-center md:text-left">
           <p>© {new Date().getFullYear()} Filtronic Lifestyle Pvt Ltd. All rights reserved.</p>
           <p>
             Made with love by{" "}
+            <a
+              href="https://hexmontechnology.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-green hover:text-brand-indigo transition-colors font-medium"
+            >
+              Hexmon Technology
+            </a>
+          </p>
+        </div>
+      </div>
             <a
               href="https://hexmontechnology.com/"
               target="_blank"
