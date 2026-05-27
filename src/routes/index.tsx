@@ -10,6 +10,11 @@ import service3dHouseImg from "@/assets/service-3d-house.jpg";
 import serviceFurniturePartnerImg from "@/assets/service-furniture-partner.jpg";
 import serviceSpacePlanningImg from "@/assets/service-space-planning.jpg";
 import serviceCustomFurnitureImg from "@/assets/service-custom-furniture.jpg";
+import projectQuietHouseImg from "@/assets/project-quiet-house.jpg";
+import projectAtelier22Img from "@/assets/project-atelier-22.jpg";
+import projectMaisonVerdeImg from "@/assets/project-maison-verde.jpg";
+import projectBrassLinenImg from "@/assets/project-brass-linen.jpg";
+import projectStudioLumenImg from "@/assets/project-studio-lumen.jpg";
 
 const serviceImages = [
   serviceResidentialImg,
@@ -318,11 +323,11 @@ function Home() {
 
         {/* Editorial gallery grid */}
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6 auto-rows-[180px]">
-          <FeaturedTile className="md:col-span-4 md:row-span-2" label="The Quiet House" cat="Residential · Bhubaneswar" />
-          <FeaturedTile className="md:col-span-2 md:row-span-1" label="Studio Lumen" cat="Commercial" />
-          <FeaturedTile className="md:col-span-2 md:row-span-1" label="Brass & Linen" cat="Hospitality" />
-          <FeaturedTile className="md:col-span-3 md:row-span-2" label="Atelier 22" cat="Retail · Bhubaneswar" />
-          <FeaturedTile className="md:col-span-3 md:row-span-2" label="Maison Verde" cat="Residential" />
+          <FeaturedTile className="md:col-span-4 md:row-span-2" image={projectQuietHouseImg} label="The Quiet House" />
+          <FeaturedTile className="md:col-span-2 md:row-span-1" image={projectStudioLumenImg} label="Studio Lumen" />
+          <FeaturedTile className="md:col-span-2 md:row-span-1" image={projectBrassLinenImg} label="Brass & Linen" />
+          <FeaturedTile className="md:col-span-3 md:row-span-2" image={projectAtelier22Img} label="Atelier 22" />
+          <FeaturedTile className="md:col-span-3 md:row-span-2" image={projectMaisonVerdeImg} label="Maison Verde" />
         </div>
       </section>
 
@@ -436,24 +441,21 @@ function Home() {
 }
 
 function FeaturedTile({
-  className="",
+  className = "",
+  image,
   label,
-  cat,
 }: {
   className?: string;
+  image: string;
   label: string;
-  cat: string;
 }) {
   return (
     <div className={`group relative overflow-hidden rounded-2xl ${className}`}>
-      <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105">
-        <ImagePlaceholder label={label} ratio="auto" className="!h-full" />
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/0 to-foreground/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 text-background">
-        <div className="font-display text-2xl">{label}</div>
-        <div className="text-[10px] uppercase tracking-[0.2em] mt-1 opacity-80">{cat}</div>
-      </div>
+      <img
+        src={image}
+        alt={label}
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+      />
     </div>
   );
 }
