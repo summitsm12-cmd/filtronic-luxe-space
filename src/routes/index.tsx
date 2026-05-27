@@ -238,13 +238,17 @@ function Home() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map(({ icon: Icon, t, d }) => (
+          {services.map(({ icon: Icon, t, d }, i) => (
             <div
               key={t}
               className="group relative flex flex-col bg-white border border-[#e5e7eb] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
             >
               <div className="relative h-44 overflow-hidden rounded-t-2xl">
-                <ImagePlaceholder label={t} ratio="auto" className="!h-full" />
+                <img
+                  src={serviceImages[i]}
+                  alt={t}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 <div className="absolute top-4 left-4 w-11 h-11 rounded-full bg-white/95 backdrop-blur flex items-center justify-center text-brand-green shadow-soft">
                   <Icon size={18} />
                 </div>
