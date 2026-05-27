@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
+import heroFeaturedImg from "@/assets/hero-featured.jpg";
+import heroDetailImg from "@/assets/hero-detail.jpg";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -105,7 +107,7 @@ function Home() {
           <div className="lg:col-span-7 reveal">
             <div className="inline-flex items-center gap-2 px-4 h-9 rounded-md border border-border bg-background/70 backdrop-blur text-xs uppercase tracking-[0.25em] text-brand-green mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse" />
-              Interior Design Studio · Bhubaneswar
+              Interior Design Studio
             </div>
             <h1 className="font-display text-5xl md:text-6xl lg:text-[5.25rem] leading-[1.02] text-brand-green tracking-tight">
               Absolutely Transformative
@@ -136,18 +138,24 @@ function Home() {
 
           {/* Right — layered featured project card */}
           <div className="lg:col-span-5 relative reveal">
-            <ImagePlaceholder
-              label="Featured Project"
-              ratio="4/5"
-              className="rounded-2xl shadow-elegant"
+            <img
+              src={heroFeaturedImg}
+              alt="Featured Project"
+              className="w-full rounded-2xl shadow-elegant object-cover"
+              style={{ aspectRatio: "4/5" }}
             />
             <div className="absolute -bottom-10 -left-10 w-52 hidden md:block">
               <div className="rounded-2xl shadow-elegant border-4 border-background overflow-hidden bg-background">
-                <ImagePlaceholder label="Detail" ratio="1/1" />
+                <img
+                  src={heroDetailImg}
+                  alt="Detail"
+                  className="w-full object-cover"
+                  style={{ aspectRatio: "1/1" }}
+                />
                 <div className="p-4">
                   <div className="font-display text-base text-foreground">The Quiet House</div>
                   <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground mt-1">
-                    Residential · 2024
+                    Residential
                   </div>
                 </div>
               </div>
