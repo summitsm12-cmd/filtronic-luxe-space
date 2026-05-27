@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ImagePlaceholder } from "@/components/site/ImagePlaceholder";
+import { Reveal } from "@/components/site/Reveal";
 import heroFeaturedImg from "@/assets/hero-featured.jpg";
 import heroDetailImg from "@/assets/hero-detail.jpg";
 import serviceResidentialImg from "@/assets/service-residential.jpg";
@@ -126,34 +127,34 @@ function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/0 to-background" />
         </div>
 
-        <div className="container-px mx-auto max-w-7xl grid lg:grid-cols-12 gap-10 lg:gap-16 pt-12 lg:pt-20 pb-32 items-center">
+        <div className="container-px mx-auto max-w-7xl grid lg:grid-cols-12 gap-10 lg:gap-16 pt-6 sm:pt-10 lg:pt-20 pb-20 sm:pb-24 lg:pb-32 items-center">
           {/* Left */}
           <div className="lg:col-span-7 reveal">
-            <div className="inline-flex items-center gap-2 px-4 h-9 rounded-md border border-border bg-background/70 backdrop-blur text-xs uppercase tracking-[0.25em] text-brand-green mb-8">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 h-8 sm:h-9 rounded-md border border-border bg-background/70 backdrop-blur text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-brand-green mb-5 sm:mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse" />
               Interior Design Studio
             </div>
-            <h1 className="font-display text-5xl md:text-6xl lg:text-[5.25rem] leading-[1.02] text-brand-green tracking-tight">
+            <h1 className="font-display text-[2.25rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-[5.25rem] lg:leading-[1.02] text-brand-green tracking-tight">
               Absolutely Transformative
               <br />
               And <em className="italic text-brand-indigo">Stylish</em> Designs
             </h1>
-            <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="mt-5 sm:mt-8 text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
               Filtronic Lifestyle creates premium residential and commercial
               interiors in Bhubaneswar with modern aesthetics, functionality,
               and timeless craftsmanship.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-7 sm:mt-10 flex flex-wrap gap-3 sm:gap-4">
               <Link
                 to="/gallery"
-                className="group inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500 shadow-soft"
+                className="group inline-flex items-center gap-2 px-5 sm:px-7 h-11 sm:h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500 shadow-soft"
               >
                 Explore Projects
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center px-7 h-12 rounded-md border border-border bg-background/70 backdrop-blur text-foreground text-sm tracking-wide hover:border-brand-green hover:text-brand-green transition-colors duration-500"
+                className="inline-flex items-center px-5 sm:px-7 h-11 sm:h-12 rounded-md border border-border bg-background/70 backdrop-blur text-foreground text-sm tracking-wide hover:border-brand-green hover:text-brand-green transition-colors duration-500"
               >
                 Book Consultation
               </Link>
@@ -161,7 +162,7 @@ function Home() {
           </div>
 
           {/* Right — layered featured project card */}
-          <div className="lg:col-span-5 relative reveal">
+          <div className="lg:col-span-5 relative reveal mt-4 lg:mt-0">
             <img
               src={heroFeaturedImg}
               alt="Featured Project"
@@ -218,7 +219,7 @@ function Home() {
 
       {/* MARQUEE */}
       <section className="border-y border-border bg-surface">
-        <div className="container-px mx-auto max-w-7xl py-8 flex flex-wrap items-center justify-between gap-6 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+        <div className="container-px mx-auto max-w-7xl py-5 sm:py-8 flex flex-wrap items-center justify-center md:justify-between gap-x-4 gap-y-2 sm:gap-6 text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-muted-foreground">
           <span>Residential</span><span className="opacity-40">/</span>
           <span>Commercial</span><span className="opacity-40">/</span>
           <span>Modular Kitchen</span><span className="opacity-40">/</span>
@@ -228,90 +229,92 @@ function Home() {
       </section>
 
       {/* FEATURED SERVICES */}
-      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
-        <div className="grid lg:grid-cols-12 gap-10 mb-16">
-          <div className="lg:col-span-5">
-            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Featured services</p>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-green leading-tight">
+      <section className="container-px mx-auto max-w-7xl py-16 sm:py-20 lg:py-32">
+        <div className="grid lg:grid-cols-12 gap-6 sm:gap-10 mb-10 sm:mb-16">
+          <Reveal className="lg:col-span-5">
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Featured services</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green leading-tight">
               A studio built for <em className="italic text-brand-indigo">every detail.</em>
             </h2>
-          </div>
-          <div className="lg:col-span-6 lg:col-start-7 text-muted-foreground leading-relaxed self-end">
+          </Reveal>
+          <Reveal delay={120} className="lg:col-span-6 lg:col-start-7 text-sm sm:text-base text-muted-foreground leading-relaxed self-end">
             From concept to handover, we offer a fully integrated design and
             execution practice — so every detail stays true to the original idea.
-          </div>
+          </Reveal>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
           {services.map(({ icon: Icon, t, d }, i) => (
-            <div
-              key={t}
-              className="group relative flex flex-col bg-white border border-[#e5e7eb] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
-            >
-              <div className="relative h-44 overflow-hidden rounded-t-2xl">
-                <img
-                  src={serviceImages[i]}
-                  alt={t}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute top-4 left-4 w-11 h-11 rounded-full bg-white/95 backdrop-blur flex items-center justify-center text-brand-green shadow-soft">
-                  <Icon size={18} />
+            <Reveal key={t} delay={i * 70}>
+              <div
+                className="group relative flex flex-col h-full bg-white border border-[#e5e7eb] rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_18px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
+              >
+                <div className="relative h-40 sm:h-44 overflow-hidden rounded-t-2xl">
+                  <img
+                    src={serviceImages[i]}
+                    alt={t}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/95 backdrop-blur flex items-center justify-center text-brand-green shadow-soft">
+                    <Icon size={18} />
+                  </div>
+                </div>
+                <div className="flex flex-col flex-1 p-5 sm:p-6 text-center items-center">
+                  <h3 className="font-display text-lg sm:text-xl text-brand-green mb-2 sm:mb-3">{t}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-5 sm:mb-6">{d}</p>
+                  <Link
+                    to="/services"
+                    className="mt-auto inline-flex items-center justify-center h-10 w-[140px] bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500"
+                    style={{ borderRadius: "6px" }}
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </div>
-              <div className="flex flex-col flex-1 p-6 text-center items-center">
-                <h3 className="font-display text-xl text-brand-green mb-3">{t}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-6">{d}</p>
-                <Link
-                  to="/services"
-                  className="mt-auto inline-flex items-center justify-center h-10 w-[140px] bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo transition-colors duration-500"
-                  style={{ borderRadius: "6px" }}
-                >
-                  Learn More
-                </Link>
-              </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="bg-surface py-24 lg:py-32">
+      <section className="bg-surface py-16 sm:py-20 lg:py-32">
         <div className="container-px mx-auto max-w-7xl">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Why choose us</p>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-green">
+          <Reveal className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Why choose us</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green">
               Built on craft, <em className="italic text-brand-indigo">trusted</em> for delivery.
             </h2>
-          </div>
+          </Reveal>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whyUs.map(({ icon: Icon, t, d }) => (
-              <div
-                key={t}
-                className="group p-8 bg-brand-green hover:bg-brand-indigo border border-transparent rounded-2xl flex gap-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
-              >
-                <div className="w-12 h-12 rounded-full bg-white/15 text-white flex items-center justify-center shrink-0 transition-colors duration-500">
-                  <Icon size={20} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {whyUs.map(({ icon: Icon, t, d }, i) => (
+              <Reveal key={t} delay={i * 70}>
+                <div
+                  className="group h-full p-6 sm:p-8 bg-brand-green hover:bg-brand-indigo border border-transparent rounded-2xl flex gap-4 sm:gap-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
+                >
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/15 text-white flex items-center justify-center shrink-0 transition-colors duration-500">
+                    <Icon size={20} />
+                  </div>
+                  <div>
+                    <h3 className="font-display text-lg sm:text-xl text-white mb-1.5 sm:mb-2">{t}</h3>
+                    <p className="text-sm text-white/85 leading-relaxed">{d}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-display text-xl text-white mb-2">{t}</h3>
-                  <p className="text-sm text-white/85 leading-relaxed">{d}</p>
-                </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
       {/* FEATURED PROJECTS PREVIEW */}
-      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-          <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Featured projects</p>
-            <h2 className="font-display text-4xl md:text-5xl text-brand-green">
+      <section className="container-px mx-auto max-w-7xl py-16 sm:py-20 lg:py-32">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-5 sm:gap-6 mb-10 sm:mb-14">
+          <Reveal>
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Featured projects</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green">
               Recent work.
             </h2>
-          </div>
+          </Reveal>
           <Link
             to="/gallery"
             className="text-sm tracking-wide text-brand-indigo hover:text-brand-green transition-colors inline-flex items-center gap-2 group"
@@ -322,7 +325,7 @@ function Home() {
         </div>
 
         {/* Editorial gallery grid */}
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-6 auto-rows-[180px]">
+        <div className="grid grid-cols-1 md:grid-cols-6 gap-4 sm:gap-6 auto-rows-[220px] sm:auto-rows-[180px]">
           <FeaturedTile className="md:col-span-4 md:row-span-2" image={projectQuietHouseImg} label="The Quiet House" />
           <FeaturedTile className="md:col-span-2 md:row-span-1" image={projectStudioLumenImg} label="Studio Lumen" />
           <FeaturedTile className="md:col-span-2 md:row-span-1" image={projectBrassLinenImg} label="Brass & Linen" />
@@ -332,15 +335,15 @@ function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="bg-surface py-24 lg:py-32">
+      <section className="bg-surface py-16 sm:py-20 lg:py-32">
         <div className="container-px mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Client stories</p>
-              <h2 className="font-display text-4xl md:text-5xl text-brand-green max-w-xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-5 sm:gap-6 mb-10 sm:mb-14">
+            <Reveal>
+              <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Client stories</p>
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green max-w-xl">
                 Reviewed by the people who live in our work.
               </h2>
-            </div>
+            </Reveal>
             <div className="flex items-center gap-3 text-sm text-muted-foreground">
               <div className="flex">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -351,90 +354,93 @@ function Home() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t) => (
-              <div
-                key={t.n}
-                className="relative p-8 bg-card border border-border rounded-2xl hover-lift"
-              >
-                <Quote size={28} className="text-brand-green/30" />
-                <div className="flex mt-4 mb-5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} size={14} className="fill-brand-green text-brand-green" />
-                  ))}
-                </div>
-                <p className="text-foreground/90 leading-relaxed">"{t.q}"</p>
-                <div className="mt-8 pt-6 border-t border-border flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-surface text-foreground flex items-center justify-center font-display">
-                    {t.n.charAt(0)}
+          <div className="grid md:grid-cols-3 gap-5 sm:gap-6">
+            {testimonials.map((t, i) => (
+              <Reveal key={t.n} delay={i * 100}>
+                <div className="relative h-full p-6 sm:p-8 bg-card border border-border rounded-2xl hover-lift">
+                  <Quote size={28} className="text-brand-green/30" />
+                  <div className="flex mt-3 sm:mt-4 mb-4 sm:mb-5">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} size={14} className="fill-brand-green text-brand-green" />
+                    ))}
                   </div>
-                  <div>
-                    <div className="text-sm font-medium text-foreground">{t.n}</div>
-                    <div className="text-xs text-muted-foreground">{t.r}</div>
+                  <p className="text-foreground/90 leading-relaxed text-sm sm:text-base">"{t.q}"</p>
+                  <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-border flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-surface text-foreground flex items-center justify-center font-display">
+                      {t.n.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="text-sm font-medium text-foreground">{t.n}</div>
+                      <div className="text-xs text-muted-foreground">{t.r}</div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
       {/* PROCESS */}
-      <section className="container-px mx-auto max-w-7xl py-24 lg:py-32">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-xs uppercase tracking-[0.3em] text-brand-green mb-4">Our process</p>
-          <h2 className="font-display text-4xl md:text-5xl text-brand-green">
+      <section className="container-px mx-auto max-w-7xl py-16 sm:py-20 lg:py-32">
+        <Reveal className="text-center max-w-2xl mx-auto mb-10 sm:mb-16">
+          <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Our process</p>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green">
             Clarity, then <em className="italic text-brand-indigo">craft.</em>
           </h2>
-        </div>
+        </Reveal>
 
-        <div className="relative grid md:grid-cols-5 gap-8">
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 sm:gap-6">
           <div className="hidden md:block absolute top-3 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-          {process.map((s) => (
-            <div key={s.n} className="text-center group">
-              <div className="mx-auto w-7 h-7 rounded-full bg-background border-2 border-brand-green flex items-center justify-center text-[10px] text-brand-green relative z-10 group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
-                ●
+          {process.map((s, i) => (
+            <Reveal key={s.n} delay={i * 80} className="text-center">
+              <div className="group">
+                <div className="mx-auto w-7 h-7 rounded-full bg-background border-2 border-brand-green flex items-center justify-center text-[10px] text-brand-green relative z-10 group-hover:bg-brand-green group-hover:text-primary-foreground transition-colors duration-500">
+                  ●
+                </div>
+                <div className="font-display text-brand-indigo text-sm mt-4 sm:mt-6">{s.n}</div>
+                <h3 className="font-display text-lg sm:text-xl text-brand-green mt-2 mb-2 sm:mb-3">{s.t}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{s.d}</p>
               </div>
-              <div className="font-display text-brand-indigo text-sm mt-6">{s.n}</div>
-              <h3 className="font-display text-xl text-brand-green mt-2 mb-3">{s.t}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{s.d}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* CTA BANNER */}
-      <section className="container-px mx-auto max-w-7xl pb-24">
-        <div className="relative overflow-hidden rounded-3xl bg-surface text-foreground p-12 md:p-20">
-          <div className="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-brand-green/30 blur-3xl" />
-          <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-brand-green/10 blur-3xl" />
-          <div className="relative grid md:grid-cols-12 gap-8 items-center">
-            <div className="md:col-span-8">
-              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-4">
-                Ready when you are
-              </p>
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl leading-tight">
-                Let's Design Your <em className="italic text-brand-indigo">Dream Space.</em>
-              </h2>
-            </div>
-            <div className="md:col-span-4 flex flex-wrap md:justify-end gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:text-white transition-colors duration-500 shadow-soft"
-              >
-                Book Consultation
-                <ArrowRight size={16} />
-              </Link>
-              <a
-                href="tel:+918658326019"
-                className="inline-flex items-center gap-2 px-7 h-12 rounded-md bg-brand-green border border-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:border-brand-indigo transition-colors duration-500"
-              >
-                <Phone size={14} />
-                Call now
-              </a>
+      <section className="container-px mx-auto max-w-7xl pb-16 sm:pb-20 lg:pb-24">
+        <Reveal>
+          <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-surface text-foreground p-8 sm:p-12 md:p-20">
+            <div className="absolute -top-24 -right-24 w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-brand-green/30 blur-3xl" />
+            <div className="absolute -bottom-32 -left-20 w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-brand-green/10 blur-3xl" />
+            <div className="relative grid md:grid-cols-12 gap-6 sm:gap-8 items-center">
+              <div className="md:col-span-8">
+                <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-muted-foreground mb-3 sm:mb-4">
+                  Ready when you are
+                </p>
+                <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+                  Let's Design Your <em className="italic text-brand-indigo">Dream Space.</em>
+                </h2>
+              </div>
+              <div className="md:col-span-4 flex flex-wrap md:justify-end gap-3 sm:gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-5 sm:px-7 h-11 sm:h-12 rounded-md bg-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:text-white transition-colors duration-500 shadow-soft"
+                >
+                  Book Consultation
+                  <ArrowRight size={16} />
+                </Link>
+                <a
+                  href="tel:+918658326019"
+                  className="inline-flex items-center gap-2 px-5 sm:px-7 h-11 sm:h-12 rounded-md bg-brand-green border border-brand-green text-primary-foreground text-sm tracking-wide hover:bg-brand-indigo hover:border-brand-indigo transition-colors duration-500"
+                >
+                  <Phone size={14} />
+                  Call now
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </section>
     </div>
   );
