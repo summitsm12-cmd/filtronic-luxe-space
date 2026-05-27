@@ -388,7 +388,16 @@ function Lightbox({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="lg:col-span-8">
-          <ImagePlaceholder label={p.t} ratio="4/3" />
+          {projectImages[p.t] ? (
+            <img
+              src={projectImages[p.t]}
+              alt={p.t}
+              className="w-full h-full object-cover"
+              style={{ aspectRatio: "4/3" }}
+            />
+          ) : (
+            <ImagePlaceholder label={p.t} ratio="4/3" />
+          )}
         </div>
         <div className="lg:col-span-4 p-8 lg:p-10 flex flex-col">
           <div className="text-[10px] uppercase tracking-[0.25em] text-brand-green mb-3">
