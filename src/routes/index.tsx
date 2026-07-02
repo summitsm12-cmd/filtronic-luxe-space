@@ -66,13 +66,14 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Filtronic Lifestyle creates premium residential and commercial interiors in Bhubaneswar with modern aesthetics, functionality, and timeless craftsmanship.",
+          "Filtronic Lifestyle designs premium residential, commercial, corporate office, boardroom, auditorium and data centre interiors across Bhubaneswar and Odisha.",
       },
       { property: "og:title", content: "Filtronic Lifestyle — Interior Design Studio" },
       {
         property: "og:description",
-        content: "Absolutely transformative and stylish interior designs.",
+        content: "Homes, offices, boardrooms, auditoriums and data centres — designed and delivered turnkey.",
       },
+
     ],
   }),
   component: Home,
