@@ -14,6 +14,9 @@ import serviceDataCentreImg from "@/assets/service-data-centre.jpg";
 import serviceBoardroomImg from "@/assets/corp-boardroom-vertical-garden.jpg";
 import serviceAuditoriumImg from "@/assets/corp-auditorium-hall.jpg";
 import serviceOfficeImg from "@/assets/service-office.jpg";
+import serviceOfficeFurnitureImg from "@/assets/service-office-furniture.jpg";
+import serviceSmartCityImg from "@/assets/service-smart-city.jpg";
+import serviceUrbanCorridorImg from "@/assets/service-urban-corridor.jpg";
 import pillarDesignApproachImg from "@/assets/pillar-design-approach.jpg";
 import pillarMaterialSelectionImg from "@/assets/pillar-material-selection.jpg";
 import pillarSpaceOptimizationImg from "@/assets/pillar-space-optimization.jpg";
@@ -30,9 +33,12 @@ const serviceImages = [
   serviceResidentialImg,
   serviceCommercialImg,
   serviceOfficeImg,
+  serviceOfficeFurnitureImg,
   serviceBoardroomImg,
   serviceAuditoriumImg,
   serviceDataCentreImg,
+  serviceSmartCityImg,
+  serviceUrbanCorridorImg,
   serviceConsultationImg,
   serviceKitchenImg,
   service3dHouseImg,
@@ -49,7 +55,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Residential, commercial, corporate office, boardroom, auditorium, data centre, modular, 3D design and turnkey interior services by Filtronic Lifestyle, Bhubaneswar.",
+          "Residential, commercial, corporate office, custom office furniture, boardroom, auditorium, data centre, smart-city and urban planning services by Filtronic Lifestyle, Bhubaneswar.",
       },
       { property: "og:title", content: "Our Interior Services — Filtronic Lifestyle" },
       {
@@ -76,6 +82,10 @@ const services = [
     d: "Productive, brand-forward workplaces — workstations, cabins, breakout zones and meeting rooms.",
   },
   {
+    t: "Custom Office Furniture",
+    d: "Bespoke executive desks, boardroom tables, workstations and storage — designed and joinery-built for your brand.",
+  },
+  {
     t: "Boardroom Interior Design",
     d: "Executive boardrooms with integrated AV, conference tables, acoustic paneling and lighting.",
   },
@@ -86,6 +96,14 @@ const services = [
   {
     t: "Data Centre Interior & Infrastructure",
     d: "Server rooms and data centre fit-outs — raised flooring, cable management, cooling and access.",
+  },
+  {
+    t: "Urban & Smart City Planning",
+    d: "Masterplans for smart-city precincts, tech parks and mixed-use townships — zoning, mobility and public realm.",
+  },
+  {
+    t: "Smart City Corridors",
+    d: "Corridor design integrating metro, EV mobility, landscape spine, utilities and street-level activation.",
   },
   {
     t: "Interior Consultation",
