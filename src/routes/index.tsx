@@ -113,6 +113,20 @@ const commercialSolutions = [
     image: serviceDataCentreImg,
     tag: "Infrastructure",
   },
+  {
+    icon: Armchair,
+    t: "Custom Office Furniture",
+    d: "Bespoke executive desks, credenzas, conference tables and workstation systems — designed for your brand and built to last.",
+    image: serviceOfficeFurnitureImg,
+    tag: "Bespoke",
+  },
+  {
+    icon: Map,
+    t: "Urban & Smart City Planning",
+    d: "Masterplans for smart-city corridors, tech parks and mixed-use precincts — from concept to phased delivery.",
+    image: serviceSmartCityImg,
+    tag: "Urban",
+  },
 ];
 
 const commercialExtras = [
