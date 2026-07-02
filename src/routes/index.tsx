@@ -11,6 +11,10 @@ import service3dHouseImg from "@/assets/service-3d-house.jpg";
 import serviceFurniturePartnerImg from "@/assets/service-furniture-partner.jpg";
 import serviceSpacePlanningImg from "@/assets/service-space-planning.jpg";
 import serviceCustomFurnitureImg from "@/assets/service-custom-furniture.jpg";
+import serviceDataCentreImg from "@/assets/service-data-centre.jpg";
+import serviceBoardroomImg from "@/assets/corp-boardroom-vertical-garden.jpg";
+import serviceAuditoriumImg from "@/assets/corp-auditorium-hall.jpg";
+import serviceOfficeImg from "@/assets/service-office.jpg";
 import projectQuietHouseImg from "@/assets/project-quiet-house.jpg";
 import projectAtelier22Img from "@/assets/project-atelier-22.jpg";
 import projectMaisonVerdeImg from "@/assets/project-maison-verde.jpg";
@@ -20,6 +24,10 @@ import projectStudioLumenImg from "@/assets/project-studio-lumen.jpg";
 const serviceImages = [
   serviceResidentialImg,
   serviceCommercialImg,
+  serviceOfficeImg,
+  serviceBoardroomImg,
+  serviceAuditoriumImg,
+  serviceDataCentreImg,
   serviceConsultationImg,
   serviceKitchenImg,
   service3dHouseImg,
@@ -27,6 +35,7 @@ const serviceImages = [
   serviceSpacePlanningImg,
   serviceCustomFurnitureImg,
 ];
+
 import {
   ArrowRight,
   ArrowUpRight,
@@ -57,13 +66,14 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Filtronic Lifestyle creates premium residential and commercial interiors in Bhubaneswar with modern aesthetics, functionality, and timeless craftsmanship.",
+          "Filtronic Lifestyle designs premium residential, commercial, corporate office, boardroom, auditorium and data centre interiors across Bhubaneswar and Odisha.",
       },
       { property: "og:title", content: "Filtronic Lifestyle — Interior Design Studio" },
       {
         property: "og:description",
-        content: "Absolutely transformative and stylish interior designs.",
+        content: "Homes, offices, boardrooms, auditoriums and data centres — designed and delivered turnkey.",
       },
+
     ],
   }),
   component: Home,
@@ -71,14 +81,19 @@ export const Route = createFileRoute("/")({
 
 const services = [
   { icon: HomeIcon, t: "Residential Design", d: "Full-home interiors crafted around how you live." },
-  { icon: Building2, t: "Commercial Design", d: "Offices, retail and hospitality with brand-led identity." },
+  { icon: Building2, t: "Commercial Design", d: "Retail and hospitality with brand-led identity." },
+  { icon: LayoutGrid, t: "Corporate Office", d: "Productive, brand-forward workplaces end to end." },
+  { icon: Users, t: "Boardroom Design", d: "Executive boardrooms with integrated AV and acoustics." },
+  { icon: Sparkles, t: "Office Auditorium", d: "Auditoriums and town-halls with tiered seating and stagecraft." },
+  { icon: Settings2, t: "Data Centre Fit-out", d: "Server rooms with raised flooring, cooling and cable management." },
   { icon: MessageSquare, t: "Interior Consultation", d: "Expert direction on layout, palette and materials." },
   { icon: ChefHat, t: "Modular Kitchen", d: "Engineered modular kitchens in premium finishes." },
   { icon: Box, t: "3D House Design", d: "Photoreal visualizations before a single nail is driven." },
   { icon: Sofa, t: "Furniture Partner", d: "Curated furniture sourcing from trusted partners." },
-  { icon: LayoutGrid, t: "Space Planning", d: "Intelligent layouts that maximize light and flow." },
+  { icon: Ruler, t: "Space Planning", d: "Intelligent layouts that maximize light and flow." },
   { icon: Hammer, t: "Custom Furniture", d: "Bespoke pieces built to your space and proportions." },
 ];
+
 
 const whyUs = [
   { icon: Sparkles, t: "Modern Design Expertise", d: "Contemporary aesthetics rooted in timeless principles." },
@@ -221,9 +236,11 @@ function Home() {
       <section className="border-y border-border bg-surface">
         <div className="container-px mx-auto max-w-7xl py-5 sm:py-8 flex flex-wrap items-center justify-center md:justify-between gap-x-4 gap-y-2 sm:gap-6 text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-muted-foreground">
           <span>Residential</span><span className="opacity-40">/</span>
-          <span>Commercial</span><span className="opacity-40">/</span>
+          <span>Corporate Office</span><span className="opacity-40">/</span>
+          <span>Boardroom</span><span className="opacity-40">/</span>
+          <span>Auditorium</span><span className="opacity-40">/</span>
+          <span>Data Centre</span><span className="opacity-40">/</span>
           <span>Modular Kitchen</span><span className="opacity-40">/</span>
-          <span>3D Visualization</span><span className="opacity-40">/</span>
           <span>Turnkey</span>
         </div>
       </section>
