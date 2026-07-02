@@ -236,9 +236,11 @@ function Home() {
       <section className="border-y border-border bg-surface">
         <div className="container-px mx-auto max-w-7xl py-5 sm:py-8 flex flex-wrap items-center justify-center md:justify-between gap-x-4 gap-y-2 sm:gap-6 text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.25em] text-muted-foreground">
           <span>Residential</span><span className="opacity-40">/</span>
-          <span>Commercial</span><span className="opacity-40">/</span>
+          <span>Corporate Office</span><span className="opacity-40">/</span>
+          <span>Boardroom</span><span className="opacity-40">/</span>
+          <span>Auditorium</span><span className="opacity-40">/</span>
+          <span>Data Centre</span><span className="opacity-40">/</span>
           <span>Modular Kitchen</span><span className="opacity-40">/</span>
-          <span>3D Visualization</span><span className="opacity-40">/</span>
           <span>Turnkey</span>
         </div>
       </section>
