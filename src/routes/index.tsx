@@ -198,7 +198,7 @@ const testimonials = [
 ];
 
 const clients = [
-  "Basundhara Area",
+  "Coalfield HQ",
   "Talcher Coalfields",
   "MCL",
   "Enterprise IT",
@@ -277,7 +277,7 @@ function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 text-background">
                 <div className="text-[10px] uppercase tracking-[0.25em] opacity-80">Corporate Boardroom</div>
-                <div className="font-display text-xl sm:text-2xl mt-1">Basundhara Area</div>
+                <div className="font-display text-xl sm:text-2xl mt-1">Enterprise Fit-out</div>
               </div>
             </div>
             <div className="absolute -bottom-8 -left-6 w-40 sm:w-48 hidden md:block">

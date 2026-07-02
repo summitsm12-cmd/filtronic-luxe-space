@@ -37,7 +37,7 @@ const projectImages: Record<string, string> = {
   "Walk-in Wardrobe": projectWalkinWardrobeImg,
   "Garden Living": projectGardenLivingImg,
   "Executive Cabin": projectExecutiveCabinImg,
-  "Basundhara Boardroom": corpBoardroomVerticalGardenImg,
+  "Living-Wall Boardroom": corpBoardroomVerticalGardenImg,
   "Oval Conference Room": corpBoardroomOvalImg,
   "Council Chamber": corpBoardroomMicsImg,
   "Directors' Boardroom": corpBoardroomClassicImg,
@@ -197,7 +197,7 @@ const projects: Project[] = [
     d: "A guest suite that opens to a private courtyard.",
   },
   {
-    t: "Basundhara Boardroom",
+    t: "Living-Wall Boardroom",
     c: "Boardroom",
     r: "4/3",
     loc: "Talcher",
