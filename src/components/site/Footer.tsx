@@ -41,14 +41,8 @@ export function Footer() {
         <div>
           <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">Contact</h4>
           <ul className="space-y-4 text-sm text-muted-foreground">
-            <li className="flex gap-3">
-              <MapPin size={16} className="mt-0.5 shrink-0 text-brand-green" />
-              <span>
-                Plot No-198, Prachi Enclave, Phase 2,
-                <br />
-                Chandrasekharpur, Bhubaneswar, Odisha
-              </span>
-            </li>
+
+
             <li className="flex gap-3 items-center">
               <Phone size={16} className="shrink-0 text-brand-green" />
               <a href="tel:+918658326019" className="hover:text-brand-green transition-colors">
