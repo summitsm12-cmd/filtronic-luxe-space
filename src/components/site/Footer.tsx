@@ -15,6 +15,8 @@ export function Footer() {
             />
           </Link>
           <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-[260px]">
+            Crafting refined interiors where architecture, light and craftsmanship meet to shape modern living.
+          </p>
         </div>
 
         <div>
