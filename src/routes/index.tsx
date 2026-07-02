@@ -326,11 +326,11 @@ function Home() {
             </h2>
           </Reveal>
           <Reveal delay={120} className="lg:col-span-5 lg:col-start-8 text-sm sm:text-base text-muted-foreground leading-relaxed self-end">
-            From boardrooms and auditoriums to data centres and full corporate fit-outs — a single studio for design, engineering, procurement and execution.
+            From boardrooms, auditoriums and data centres to custom office furniture and smart-city masterplans — a single studio for design, engineering, procurement and execution.
           </Reveal>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-5 sm:gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {commercialSolutions.map(({ icon: Icon, t, d, image, tag }, i) => (
             <Reveal key={t} delay={i * 80}>
               <article className="group relative overflow-hidden rounded-2xl bg-card border border-border hover:shadow-[0_18px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-all duration-500">
