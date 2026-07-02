@@ -55,7 +55,7 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Residential, commercial, corporate office, boardroom, auditorium, data centre, modular, 3D design and turnkey interior services by Filtronic Lifestyle, Bhubaneswar.",
+          "Residential, commercial, corporate office, custom office furniture, boardroom, auditorium, data centre, smart-city and urban planning services by Filtronic Lifestyle, Bhubaneswar.",
       },
       { property: "og:title", content: "Our Interior Services — Filtronic Lifestyle" },
       {
