@@ -202,6 +202,8 @@ const clients = [
   "Talcher Coalfields",
   "MCL",
   "Enterprise IT",
+  "Smart City",
+  "Urban Corridors",
   "Retail Groups",
   "Hospitality",
 ];
