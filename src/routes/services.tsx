@@ -82,6 +82,10 @@ const services = [
     d: "Productive, brand-forward workplaces — workstations, cabins, breakout zones and meeting rooms.",
   },
   {
+    t: "Custom Office Furniture",
+    d: "Bespoke executive desks, boardroom tables, workstations and storage — designed and joinery-built for your brand.",
+  },
+  {
     t: "Boardroom Interior Design",
     d: "Executive boardrooms with integrated AV, conference tables, acoustic paneling and lighting.",
   },
