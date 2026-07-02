@@ -7,17 +7,18 @@ export function Footer() {
     <footer className="bg-[#f5f5f5] text-foreground mt-20 sm:mt-24 border-t border-border">
       <div className="container-px mx-auto max-w-7xl py-10 sm:py-12 md:py-14 grid gap-10 md:gap-8 sm:grid-cols-2 lg:grid-cols-4 items-start">
         <div className="flex flex-col items-start">
-          <Link to="/" className="inline-block">
+          <Link to="/" className="inline-block leading-none">
             <img
               src={logo}
               alt="Filtronic Lifestyle Pvt Ltd"
               className="w-[150px] md:w-[170px] h-auto object-contain block"
             />
           </Link>
-          <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-[260px]">
+          <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-[260px]">
             Crafting refined interiors where architecture, light and craftsmanship meet to shape modern living.
           </p>
         </div>
+
 
         <div>
           <h4 className="text-sm uppercase tracking-[0.2em] mb-5 text-brand-green font-medium">Quick Links</h4>
