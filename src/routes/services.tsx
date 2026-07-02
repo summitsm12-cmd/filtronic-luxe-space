@@ -98,6 +98,14 @@ const services = [
     d: "Server rooms and data centre fit-outs — raised flooring, cable management, cooling and access.",
   },
   {
+    t: "Urban & Smart City Planning",
+    d: "Masterplans for smart-city precincts, tech parks and mixed-use townships — zoning, mobility and public realm.",
+  },
+  {
+    t: "Smart City Corridors",
+    d: "Corridor design integrating metro, EV mobility, landscape spine, utilities and street-level activation.",
+  },
+  {
     t: "Interior Consultation",
     d: "Expert direction on layout, palette, materials and budget — a clear plan before you build.",
   },
