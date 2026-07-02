@@ -196,7 +196,96 @@ const projects: Project[] = [
     year: "2025",
     d: "A guest suite that opens to a private courtyard.",
   },
+  {
+    t: "Basundhara Boardroom",
+    c: "Boardroom",
+    r: "4/3",
+    loc: "Talcher",
+    year: "2025",
+    d: "A corporate boardroom anchored by a signature living-wall backdrop, integrated conference microphones and warm wood paneling.",
+  },
+  {
+    t: "Oval Conference Room",
+    c: "Boardroom",
+    r: "4/5",
+    loc: "Talcher",
+    year: "2025",
+    d: "An oval conference table finished in rich walnut with integrated AV, mood lighting and executive seating.",
+  },
+  {
+    t: "Council Chamber",
+    c: "Boardroom",
+    r: "1/1",
+    loc: "Talcher",
+    year: "2026",
+    d: "Council-style boardroom with rows of goose-neck microphones, hidden cable channels and acoustic paneling.",
+  },
+  {
+    t: "Directors' Boardroom",
+    c: "Corporate",
+    r: "4/3",
+    loc: "Talcher",
+    year: "2025",
+    d: "A formal directors' boardroom featuring a curved head table, presentation display and layered wood ceilings.",
+  },
+  {
+    t: "Coal Mining Meeting Room",
+    c: "Corporate",
+    r: "4/3",
+    loc: "Talcher",
+    year: "2026",
+    d: "An operational meeting room in use — long conference table, integrated conferencing and executive layout.",
+  },
+  {
+    t: "Linear Boardroom",
+    c: "Boardroom",
+    r: "4/5",
+    loc: "Talcher",
+    year: "2025",
+    d: "A linear boardroom with symmetric seating, ambient lighting and full-length AV integration.",
+  },
+  {
+    t: "Executive Conference Suite",
+    c: "Corporate",
+    r: "4/3",
+    loc: "Talcher",
+    year: "2026",
+    d: "An executive conference suite with acoustically treated wood walls, feature TV and centered table service.",
+  },
+  {
+    t: "Auditorium Podium",
+    c: "Auditorium",
+    r: "1/1",
+    loc: "Bhubaneswar",
+    year: "2025",
+    d: "A motorised podium fit-out with integrated touchscreen, wireless mics and cable management for live events.",
+  },
+  {
+    t: "Multi-Screen Auditorium",
+    c: "Auditorium",
+    r: "4/3",
+    loc: "Bhubaneswar",
+    year: "2026",
+    d: "A dual-screen auditorium with acoustic wall panels, podium and flexible presentation zones.",
+  },
+  {
+    t: "Presentation Hall",
+    c: "Auditorium",
+    r: "4/3",
+    loc: "Bhubaneswar",
+    year: "2025",
+    d: "A large presentation hall with twin displays, controlled acoustics and centralised podium.",
+  },
+  {
+    t: "Enterprise Data Centre",
+    c: "Data Centre",
+    r: "1/1",
+    loc: "Bhubaneswar",
+    year: "2026",
+    d: "A full data centre fit-out with raised flooring, hot-aisle containment, cable management and precision cooling.",
+  },
 ];
+
 
 function Gallery() {
   const [active, setActive] = useState<Category>("All");
@@ -217,9 +306,10 @@ function Gallery() {
             Our <em className="italic text-brand-indigo">Projects.</em>
           </h1>
           <p className="mt-8 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            Explore beautifully crafted residential and commercial interiors —
-            kitchens, bedrooms, living rooms, offices and more.
+            Explore residential, corporate office, boardroom, auditorium,
+            data centre and hospitality interiors — crafted end to end.
           </p>
+
         </div>
 
         {/* Filters */}
