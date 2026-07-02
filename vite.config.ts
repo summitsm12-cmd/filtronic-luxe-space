@@ -13,9 +13,9 @@ export default defineConfig({
 
     server: { entry: "server" },
     prerender: {
-      enabled: true,
-      crawlLinks: true,
-      failOnError: true,
+      enabled: false,
+      crawlLinks: false,
+      failOnError: false,
     },
     pages: [
       { path: "/" },
