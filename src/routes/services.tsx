@@ -14,6 +14,9 @@ import serviceDataCentreImg from "@/assets/service-data-centre.jpg";
 import serviceBoardroomImg from "@/assets/corp-boardroom-vertical-garden.jpg";
 import serviceAuditoriumImg from "@/assets/corp-auditorium-hall.jpg";
 import serviceOfficeImg from "@/assets/service-office.jpg";
+import serviceOfficeFurnitureImg from "@/assets/service-office-furniture.jpg";
+import serviceSmartCityImg from "@/assets/service-smart-city.jpg";
+import serviceUrbanCorridorImg from "@/assets/service-urban-corridor.jpg";
 import pillarDesignApproachImg from "@/assets/pillar-design-approach.jpg";
 import pillarMaterialSelectionImg from "@/assets/pillar-material-selection.jpg";
 import pillarSpaceOptimizationImg from "@/assets/pillar-space-optimization.jpg";
@@ -30,9 +33,12 @@ const serviceImages = [
   serviceResidentialImg,
   serviceCommercialImg,
   serviceOfficeImg,
+  serviceOfficeFurnitureImg,
   serviceBoardroomImg,
   serviceAuditoriumImg,
   serviceDataCentreImg,
+  serviceSmartCityImg,
+  serviceUrbanCorridorImg,
   serviceConsultationImg,
   serviceKitchenImg,
   service3dHouseImg,
