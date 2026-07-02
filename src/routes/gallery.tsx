@@ -13,6 +13,17 @@ import projectMasterSuiteImg from "@/assets/project-master-suite.jpg";
 import projectWalkinWardrobeImg from "@/assets/project-walkin-wardrobe.jpg";
 import projectGardenLivingImg from "@/assets/project-garden-living.jpg";
 import projectExecutiveCabinImg from "@/assets/project-executive-cabin.jpg";
+import corpBoardroomVerticalGardenImg from "@/assets/corp-boardroom-vertical-garden.jpg";
+import corpBoardroomOvalImg from "@/assets/corp-boardroom-oval.jpg";
+import corpBoardroomMicsImg from "@/assets/corp-boardroom-mics.jpg";
+import corpBoardroomClassicImg from "@/assets/corp-boardroom-classic.jpg";
+import corpBoardroomMeetingImg from "@/assets/corp-boardroom-meeting.jpg";
+import corpBoardroomLinearImg from "@/assets/corp-boardroom-linear.jpg";
+import corpBoardroomEmptyImg from "@/assets/corp-boardroom-empty.jpg";
+import corpAuditoriumPodiumImg from "@/assets/corp-auditorium-podium.jpg";
+import corpAuditoriumHallImg from "@/assets/corp-auditorium-hall.jpg";
+import corpAuditoriumScreensImg from "@/assets/corp-auditorium-screens.jpg";
+import serviceDataCentreImg from "@/assets/service-data-centre.jpg";
 
 const projectImages: Record<string, string> = {
   "The Quiet House": projectQuietHouseImg,
@@ -26,7 +37,19 @@ const projectImages: Record<string, string> = {
   "Walk-in Wardrobe": projectWalkinWardrobeImg,
   "Garden Living": projectGardenLivingImg,
   "Executive Cabin": projectExecutiveCabinImg,
+  "Basundhara Boardroom": corpBoardroomVerticalGardenImg,
+  "Oval Conference Room": corpBoardroomOvalImg,
+  "Council Chamber": corpBoardroomMicsImg,
+  "Directors' Boardroom": corpBoardroomClassicImg,
+  "Coal Mining Meeting Room": corpBoardroomMeetingImg,
+  "Linear Boardroom": corpBoardroomLinearImg,
+  "Executive Conference Suite": corpBoardroomEmptyImg,
+  "Auditorium Podium": corpAuditoriumPodiumImg,
+  "Multi-Screen Auditorium": corpAuditoriumHallImg,
+  "Presentation Hall": corpAuditoriumScreensImg,
+  "Enterprise Data Centre": serviceDataCentreImg,
 };
+
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
@@ -51,6 +74,10 @@ type Category =
   | "All"
   | "Residential"
   | "Commercial"
+  | "Corporate"
+  | "Boardroom"
+  | "Auditorium"
+  | "Data Centre"
   | "Kitchen"
   | "Bedroom"
   | "Living Room"
@@ -60,11 +87,16 @@ const categories: Category[] = [
   "All",
   "Residential",
   "Commercial",
+  "Corporate",
+  "Boardroom",
+  "Auditorium",
+  "Data Centre",
   "Kitchen",
   "Bedroom",
   "Living Room",
   "Office",
 ];
+
 
 type Project = {
   t: string;
