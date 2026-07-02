@@ -10,6 +10,10 @@ import service3dHouseImg from "@/assets/service-3d-house.jpg";
 import serviceFurniturePartnerImg from "@/assets/service-furniture-partner.jpg";
 import serviceSpacePlanningImg from "@/assets/service-space-planning.jpg";
 import serviceCustomFurnitureImg from "@/assets/service-custom-furniture.jpg";
+import serviceDataCentreImg from "@/assets/service-data-centre.jpg";
+import serviceBoardroomImg from "@/assets/corp-boardroom-vertical-garden.jpg";
+import serviceAuditoriumImg from "@/assets/corp-auditorium-hall.jpg";
+import serviceOfficeImg from "@/assets/service-office.jpg";
 import pillarDesignApproachImg from "@/assets/pillar-design-approach.jpg";
 import pillarMaterialSelectionImg from "@/assets/pillar-material-selection.jpg";
 import pillarSpaceOptimizationImg from "@/assets/pillar-space-optimization.jpg";
@@ -25,6 +29,10 @@ const pillarImages = [
 const serviceImages = [
   serviceResidentialImg,
   serviceCommercialImg,
+  serviceOfficeImg,
+  serviceBoardroomImg,
+  serviceAuditoriumImg,
+  serviceDataCentreImg,
   serviceConsultationImg,
   serviceKitchenImg,
   service3dHouseImg,
@@ -32,6 +40,7 @@ const serviceImages = [
   serviceSpacePlanningImg,
   serviceCustomFurnitureImg,
 ];
+
 
 export const Route = createFileRoute("/services")({
   head: () => ({
@@ -62,6 +71,22 @@ const services = [
     d: "Offices, retail and hospitality spaces with brand-led identity and functional planning.",
   },
   {
+    t: "Corporate Office Design",
+    d: "Productive, brand-forward workplaces — workstations, cabins, breakout zones and meeting rooms.",
+  },
+  {
+    t: "Boardroom Interior Design",
+    d: "Executive boardrooms with integrated AV, conference tables, acoustic paneling and lighting.",
+  },
+  {
+    t: "Office Auditorium Design",
+    d: "Purpose-built auditoriums and town-hall spaces with tiered seating, acoustics and stagecraft.",
+  },
+  {
+    t: "Data Centre Interior & Infrastructure",
+    d: "Server rooms and data centre fit-outs — raised flooring, cable management, cooling and access.",
+  },
+  {
     t: "Interior Consultation",
     d: "Expert direction on layout, palette, materials and budget — a clear plan before you build.",
   },
@@ -86,6 +111,7 @@ const services = [
     d: "Bespoke pieces designed and built for your space, proportions and aesthetic.",
   },
 ];
+
 
 const pillars = [
   {
