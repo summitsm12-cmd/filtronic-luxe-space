@@ -470,8 +470,110 @@ function Home() {
         </div>
       </section>
 
+      {/* URBAN PLANNING & SMART CITY */}
+      <section className="bg-surface py-16 sm:py-20 lg:py-32">
+        <div className="container-px mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-12 gap-6 sm:gap-10 mb-10 sm:mb-14">
+            <Reveal className="lg:col-span-7">
+              <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Urban planning & smart city</p>
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green leading-tight">
+                Smart-city corridors, <em className="italic text-brand-indigo">masterplanned.</em>
+              </h2>
+            </Reveal>
+            <Reveal delay={120} className="lg:col-span-5 text-sm sm:text-base text-muted-foreground leading-relaxed self-end">
+              Urban design for smart-city corridors, tech parks, township precincts and mixed-use campuses — integrating mobility, landscape, utilities and public realm from day one.
+            </Reveal>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-5 sm:gap-6">
+            <Reveal className="lg:col-span-7">
+              <div className="relative rounded-2xl overflow-hidden shadow-elegant">
+                <img
+                  src={serviceUrbanCorridorImg}
+                  alt="Smart city urban corridor with metro, EV charging and landscaped promenade"
+                  loading="lazy"
+                  className="w-full object-cover"
+                  style={{ aspectRatio: "16/10" }}
+                />
+                <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3 h-8 rounded-md bg-background/95 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
+                  <RouteIcon size={12} /> Corridor Design
+                </div>
+              </div>
+            </Reveal>
+            <Reveal delay={120} className="lg:col-span-5 flex flex-col gap-5 sm:gap-6">
+              <div className="relative rounded-2xl overflow-hidden shadow-elegant flex-1">
+                <img
+                  src={serviceCityPlanningImg}
+                  alt="Architects reviewing a 3D city masterplan model"
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                  style={{ aspectRatio: "4/3" }}
+                />
+              </div>
+              <ul className="grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-foreground/90">
+                {[
+                  "Masterplans & zoning",
+                  "Mobility corridors",
+                  "Public realm design",
+                  "Landscape & green spine",
+                  "Utilities integration",
+                  "Phased delivery",
+                ].map((f) => (
+                  <li key={f} className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-green" /> {f}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* CUSTOM OFFICE FURNITURE */}
+      <section className="container-px mx-auto max-w-7xl py-16 sm:py-20 lg:py-32">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+          <Reveal className="lg:col-span-6">
+            <div className="relative rounded-2xl overflow-hidden shadow-elegant">
+              <img
+                src={serviceOfficeFurnitureImg}
+                alt="Bespoke custom-built executive office furniture"
+                loading="lazy"
+                className="w-full object-cover"
+                style={{ aspectRatio: "4/3" }}
+              />
+              <div className="absolute top-4 left-4 inline-flex items-center gap-2 px-3 h-8 rounded-md bg-background/95 backdrop-blur text-[10px] uppercase tracking-[0.2em] text-brand-indigo">
+                <Armchair size={12} /> Bespoke Joinery
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={120} className="lg:col-span-6">
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-brand-green mb-3 sm:mb-4">Custom office furniture</p>
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-green leading-tight">
+              Furniture built <em className="italic text-brand-indigo">for your brief.</em>
+            </h2>
+            <p className="mt-5 sm:mt-6 text-sm sm:text-base text-muted-foreground leading-relaxed">
+              Executive desks, boardroom tables, credenzas, storage systems and reception counters — designed in-house, prototyped and delivered by our own joinery partners. Every piece scaled to the room, branded in your palette and engineered for daily corporate use.
+            </p>
+            <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-4">
+              {[
+                { k: "Executive Desks", v: "Solid wood & veneer" },
+                { k: "Conference Tables", v: "Integrated AV & power" },
+                { k: "Workstations", v: "Modular systems" },
+                { k: "Storage & Credenzas", v: "Custom hardware" },
+              ].map((s) => (
+                <div key={s.k} className="p-4 rounded-xl border border-border bg-background">
+                  <div className="font-display text-brand-green">{s.k}</div>
+                  <div className="text-xs text-muted-foreground mt-1">{s.v}</div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* 3D VISUALIZATION */}
       <section className="bg-surface py-16 sm:py-20 lg:py-32">
+
         <div className="container-px mx-auto max-w-7xl grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           <Reveal className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden shadow-elegant">
