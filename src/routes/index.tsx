@@ -20,6 +20,10 @@ import serviceOfficeImg from "@/assets/service-office.jpg";
 import serviceCorpLobbyImg from "@/assets/service-corp-lobby.jpg";
 import serviceRetailImg from "@/assets/service-retail.jpg";
 import service3dVizImg from "@/assets/service-3d-viz.jpg";
+import serviceOfficeFurnitureImg from "@/assets/service-office-furniture.jpg";
+import serviceSmartCityImg from "@/assets/service-smart-city.jpg";
+import serviceUrbanCorridorImg from "@/assets/service-urban-corridor.jpg";
+import serviceCityPlanningImg from "@/assets/service-city-planning.jpg";
 
 // Residential / lifestyle
 import serviceResidentialImg from "@/assets/service-residential.jpg";
